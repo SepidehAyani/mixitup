@@ -47,10 +47,21 @@ The user wants to be able to make drinks based on the ingredients, so using this
 [![Project demo](assets/img/demo.png)](assets/img/demo.mov)
 
 ## Instructions
-```  
-git clone https://github.com/SepidehAyani/mixitup.git
-```
 
+```
+git clone https://github.com/SepidehAyani/mixitup.git
+In the root directory of the project, run 'npm i' to download the dependencies.
+Initiate the database with 'mysql -u root -p'.
+To create tables, run 'source db/schema.sql'.
+Exit the mysql terminal, and run 'npm run seed' to insert data into the tables.
+Run 'npm start' to start your server.
+```
+Make sure to add a .env file to the root of the app with the following details:
+```
+DB_NAME='ecommerce_db'
+DB_USER='user'
+DB_PW='xxx'
+```
 #### Languages and libraries used in this project:
 - <a href="https://www.npmjs.com/">NPM</a>
 - <a href="https://www.npmjs.com/package/uuid">UUID</a>
@@ -69,19 +80,17 @@ Mix-It-Up allows users to:
 - delete or update a drink.
 
 #### Contribution Guidelines:
-```  
-Feel free to contribute to this repo by creating issues or sending an email to either:
-claire.rosenfrisk@gmail.com
-kevin_wilde564@yahoo.com
-sepid.ayani@gmail.com
-```
+Feel free to contribute to this repo by creating issues or sending an email to either: <br>
+[Claire Rosenfrisk](claire.rosenfrisk@gmail.com) <br>
+[Kevin Wilder](kevin_wilde564@yahoo.com) <br>
+[SepidehAyani](https://github.com/SepidehAyani) <br>
 
 ## Questions
 <details>
     <summary>Contacts</summary>
-    claire.rosenfrisk@gmail.com
-    kevin_wilde564@yahoo.com
-    sepid.ayani@gmail.com
+    claire.rosenfrisk@gmail.com <br>
+    kevin_wilde564@yahoo.com <br>
+    sepid.ayani@gmail.com <br>
 </details>
 
 ## Project Team
