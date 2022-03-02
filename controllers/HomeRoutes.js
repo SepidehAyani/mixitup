@@ -6,4 +6,4 @@ router.get('/login', (req, res) => {
       res.redirect('/');
       return;
     }
-});
+});C
