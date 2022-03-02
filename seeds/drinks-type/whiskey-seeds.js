@@ -12,7 +12,7 @@ const whiskeyDrinksData = [
       'https://www.thecocktaildb.com/images/media/drink/ggx0lv1613942306.jpg'
   },
   {
-    name: 'Owen's Grandmother's Revenge',
+    name: 'Owens Grandmothers Revenge',
     image:
       'https://www.thecocktaildb.com/images/media/drink/0wt4uo1503565321.jpg'
   },
