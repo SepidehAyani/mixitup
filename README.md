@@ -58,7 +58,7 @@ Run 'npm start' to start your server.
 ```
 Make sure to add a .env file to the root of the app with the following details:
 ```
-DB_NAME='ecommerce_db'
+DB_NAME='mixitup'
 DB_USER='user'
 DB_PW='xxx'
 ```
@@ -74,7 +74,7 @@ DB_PW='xxx'
 
 ## Usage
 Mix-It-Up allows users to:
-- sing-up, login, and logout.
+- sign-up, login, and logout.
 - see a list of available drinks.
 - create and save new drinks which they don't lose them even if they refresh the page.
 - delete or update a drink.
