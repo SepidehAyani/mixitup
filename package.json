@@ -14,10 +14,19 @@
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.3.2",
+    "express": "^4.17.3",
+    "express-handlebars": "^5.3.5",
     "express-session": "^1.17.2",
     "mysql2": "^2.2.5",
     "sequelize": "^6.16.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SepidehAyani/mixitup.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SepidehAyani/mixitup/issues"
+  },
+  "homepage": "https://github.com/SepidehAyani/mixitup#readme"
 }
