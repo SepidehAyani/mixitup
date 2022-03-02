@@ -39,11 +39,11 @@ const brandyDrinksData = [
         image: 'https://www.thecocktaildb.com/images/media/drink/dhvr7d1504519752.jpg'
     },
     {
-        name: 'Gentleman's Club',
+        name: 'Gentlemans Club',
         image: 'https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg'
     },
     {
-        name: 'Horse's Neck',
+        name: 'Horses Neck',
         image: 'https://www.thecocktaildb.com/images/media/drink/006k4e1504370092.jpg'
     },
     {
@@ -63,7 +63,7 @@ const brandyDrinksData = [
         image: 'https://www.thecocktaildb.com/images/media/drink/64x5j41504351518.jpg'
     },
     {
-        name: 'Quaker's Cocktail',
+        name: 'Quakers Cocktail',
         image: 'https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg'
     },
     {

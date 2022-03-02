@@ -189,7 +189,6 @@ const vondkaDrinksData = [
     {
         name: 'Harvey Wallbanger',
         image: 'https://www.thecocktaildb.com/images/media/drink/7os4gs1606854357.jpg'
-
     },
     {
         name: 'Ice Pick',
