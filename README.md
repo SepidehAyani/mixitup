@@ -80,7 +80,7 @@ Mix-It-Up allows users to:
 - delete or update a drink.
 
 #### Contribution Guidelines:
-Feel free to contribute to this repo by creating issues or sending an email to either:
+Feel free to contribute to this repo by creating issues or sending an email to either: <br>
 [Claire Rosenfrisk](claire.rosenfrisk@gmail.com) <br>
 [Kevin Wilder](kevin_wilde564@yahoo.com) <br>
 [SepidehAyani](https://github.com/SepidehAyani) <br>
