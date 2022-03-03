@@ -47,7 +47,7 @@ const brandyDrinksData = [
     {
         name: 'City Slicker',
         instruction: 'In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass. Use 2 oz Brandy, 1/2 oz Triple sec, 1 Tbsp Lemon juice.',
-        ingredient: 'Brandy, Triple sec, Lemon juice.',
+        ingredient: 'Brandy, Triple sec, Lemon juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg'
     },
     {
