@@ -1,6 +1,6 @@
 const { Drink } = require('../models');
 
-const vondkaDrinksData = [
+const vodkaDrinksData = [
 
     {
         name: '155 Belmont',

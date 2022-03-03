@@ -274,286 +274,286 @@ const ginDrinksData = [
     },
     {
         name: 'Gin Cooler',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Stir powdered sugar and 2 oz. carbonated water in a collins glass. Fill glass with ice and add gin. Fill with carbonated water and stir. Add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass. Use 2 oz Gin, Carbonated water, Powdered sugar, Orange spiral, Lemon peel.',
+        ingredient: 'Gin, Carbonated water, Powdered sugar, Orange spiral, Lemon peel',
         image: 'https://www.thecocktaildb.com/images/media/drink/678xt11582481163.jpg'
     },
     {
         name: 'Gin Daisy',
-        instruction: '',
-        ingredient: '',
+        instruction: 'In a shaker half-filled with ice cubes, combine the gin, lemon juice, sugar, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the cherry and the orange slice. Use 2 oz Gin, 1 oz Lemon juice, 1/2 tsp superfine sugar, 1/2 tsp Grenadine, 1 Maraschino cherry, 1 Orange slice.',
+        ingredient: 'Gin, Lemon juice, Sugar, Grenadine, Maraschino cherry, Orange',
         image: 'https://www.thecocktaildb.com/images/media/drink/z6e22f1582581155.jpg'
     },
     {
         name: 'Gin Fizz',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water. Use 2 oz Gin, juice of half a lemon, 1 tsp powdered sugar, Carbonated water.',
+        ingredient: 'Gin, Lemon, Powdered sugar, Carbonated water',
         image: 'https://www.thecocktaildb.com/images/media/drink/drtihp1606768397.jpg'
     },
     {
         name: 'Gin Lemon',
-        instruction: '',
-        ingredient: '',
+        instruction: 'For the preparation of the gin lemon you will not need the shaker. Fill the tumbler with ice, pour the gin and lemonade over it. Gently mix and decorate with a slice of lemon. Those who prefer can also add a few mint leaves. Your gin lemon is ready to be served. Use  60 ml Gin, 80 ml Lemon Juice, 1 slice Lemon Peel, ice cubes.',
+        ingredient: 'Gin, Lemon Juice, Lemon Peel, Ice',
         image: 'https://www.thecocktaildb.com/images/media/drink/yhzvk91643821739.jpg'
     },
     {
         name: 'Gin Rickey',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Half-fill a tall glass with ice. Mix the gin and Grenadine together and pour over the ice. Add the lime or lemon juice and top off with soda water. Decorate the glass with lime and/or lemon slices. Use 2 oz Gin, 1 tsp Grenadine, juice of 1/2 lemon, Soda Water, Lime.',
+        ingredient: 'Gin, Grenadine, lemon, Soda Water, Lime',
         image: 'https://www.thecocktaildb.com/images/media/drink/s00d6f1504883945.jpg'
     },
     {
         name: 'Gin Sling',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve. Use 2 oz Gin, juice of 1/2 Lemon, 1 tsp powdered sugar, 1 tsp water, twist of orange peel.',
+        ingredient: 'Gin, Lemon, Powdered sugar, Water, orange peel',
         image: 'https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg'
-    },
-    {
-        name: 'Gin Smash',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/iprva61606768774.jpg'
-    },
-    {
-        name: 'Gin Sour',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/noxp7e1606769224.jpg'
-    },
-    {
-        name: 'Gin Squirt',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/xrbhz61504883702.jpg'
-    },
-    {
-        name: 'Gin Swizzle',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/sybce31504884026.jpg'
-    },
-    {
-        name: 'Gin Toddy',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/jxstwf1582582101.jpg'
-    },
-    {
-        name: 'Gin Tonic',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qcgz0t1643821443.jpg'
-    },
-    {
-        name: 'Grass Skirt',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg'
-    },
-    {
-        name: 'Hawaiian Cocktail',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/ujoh9x1504882987.jpg'
-    },
-    {
-        name: 'Imperial Cocktail',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg'
-    },
-    {
-        name: 'Jewel Of The Nile',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg'
-    },
-    {
-        name: 'Jitterbug',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg'
-    },
-    {
-        name: 'Lady Love Fizz',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/20d63k1504885263.jpg'
-    },
-    {
-        name: 'London Town',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/rpsrqv1468923507.jpg'
-    },
-    {
-        name: 'Lone Tree Cocktail',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/tsxpty1468923417.jpg'
-    },
-    {
-        name: 'Lone Tree Cooler',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wsyqry1479298485.jpg'
-    },
-    {
-        name: 'Long Island Tea',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg'
-    },
-    {
-        name: 'Martinez 2',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg'
-    },
-    {
-        name: 'Martinez Cocktail',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wwxwvr1439906452.jpg'
-    },
-    {
-        name: 'Martini',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg'
-    },
-    {
-        name: 'Monkey Gland',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/94psp81504350690.jpg'
-    },
-    {
-        name: 'Mountain Bramble',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg'
-    },
-    {
-        name: 'Munich Mule',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/rj55pl1582476101.jpg'
-    },
-    {
-        name: 'National Aquarium',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg'
-    },
-    {
-        name: 'Negroni',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg'
-    },
-    {
-        name: 'Orange Oasis',
-        instruction: '',
-        ingredient: '',
-        image: 'https://www.thecocktaildb.com/images/media/drink/su1olx1582473812.jpg'
-    },
-    {
-        name: 'Orange Rosemary Collins',
-        image: 'https://www.thecocktaildb.com/images/media/drink/mokcas1604179977.jpg'
-    },
-    {
-        name: 'Paradise',
-        image: 'https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg'
-    },
-    {
-        name: 'Pegu Club',
-        image: 'https://www.thecocktaildb.com/images/media/drink/jfkemm1513703902.jpg'
-    },
-    {
-        name: 'Pink Gin',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qyr51e1504888618.jpg'
-    },
-    {
-        name: 'Pink Lady',
-        image: 'https://www.thecocktaildb.com/images/media/drink/5ia6j21504887829.jpg'
-    },
-    {
-        name: 'Pink Moon',
-        image: 'https://www.thecocktaildb.com/images/media/drink/lnjoc81619696191.jpg'
-    },
-    {
-        name: 'Poppy Cocktail',
-        image: 'https://www.thecocktaildb.com/images/media/drink/cslw1w1504389915.jpg'
-    },
-    {
-        name: 'Queen Elizabeth',
-        image: 'https://www.thecocktaildb.com/images/media/drink/vpqspv1478963339.jpg'
-    },
-    {
-        name: 'Ramos Gin Fizz',
-        image: 'https://www.thecocktaildb.com/images/media/drink/967t911643844053.jpg'
-    },
-    {
-        name: 'Rose',
-        image: 'https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg'
-    },
-    {
-        name: 'Rosemary Blue',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qwc5f91512406543.jpg'
-    },
-    {
-        name: 'Royal Fizz',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wrh44j1504390609.jpg'
-    },
-    {
-        name: 'Royal Gin Fizz',
-        image: 'https://www.thecocktaildb.com/images/media/drink/pe1x1c1504735672.jpg'
-    },
-    {
-        name: 'Ruby Tuesday',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg'
-    },
-    {
-        name: 'Salted Toffee Martini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/3s6mlr1509551211.jpg'
-    },
-    {
-        name: 'Salty Dog',
-        image: 'https://www.thecocktaildb.com/images/media/drink/4vfge01504890216.jpg'
-    },
-    {
-        name: 'Singapore Sling',
-        image: 'https://www.thecocktaildb.com/images/media/drink/7dozeg1582578095.jpg'
-    },
-    {
-        name: 'Surf City Lifesaver',
-        image: 'https://www.thecocktaildb.com/images/media/drink/2rzfer1487602699.jpg'
-    },
-    {
-        name: 'The Laverstoke',
-        image: 'https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg'
-    },
-    {
-        name: 'The Philosopher',
-        image: 'https://www.thecocktaildb.com/images/media/drink/sp8hkp1596017787.jpg'
-    },
-    {
-        name: 'The Strange Weaver',
-        image: 'https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg'
-    },
-    {
-        name: 'Tom Collins',
-        image: 'https://www.thecocktaildb.com/images/media/drink/7cll921606854636.jpg'
-    },
-    {
-        name: 'Turf Cocktail',
-        image: 'https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg'
-    },
-    {
-        name: 'Tuxedo Cocktail',
-        image: 'https://www.thecocktaildb.com/images/media/drink/4u0nbl1504352551.jpg'
     }
+    // {
+    //     name: 'Gin Smash',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/iprva61606768774.jpg'
+    // },
+    // {
+    //     name: 'Gin Sour',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/noxp7e1606769224.jpg'
+    // },
+    // {
+    //     name: 'Gin Squirt',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/xrbhz61504883702.jpg'
+    // },
+    // {
+    //     name: 'Gin Swizzle',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/sybce31504884026.jpg'
+    // },
+    // {
+    //     name: 'Gin Toddy',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/jxstwf1582582101.jpg'
+    // },
+    // {
+    //     name: 'Gin Tonic',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qcgz0t1643821443.jpg'
+    // },
+    // {
+    //     name: 'Grass Skirt',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg'
+    // },
+    // {
+    //     name: 'Hawaiian Cocktail',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/ujoh9x1504882987.jpg'
+    // },
+    // {
+    //     name: 'Imperial Cocktail',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg'
+    // },
+    // {
+    //     name: 'Jewel Of The Nile',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg'
+    // },
+    // {
+    //     name: 'Jitterbug',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg'
+    // },
+    // {
+    //     name: 'Lady Love Fizz',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/20d63k1504885263.jpg'
+    // },
+    // {
+    //     name: 'London Town',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/rpsrqv1468923507.jpg'
+    // },
+    // {
+    //     name: 'Lone Tree Cocktail',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/tsxpty1468923417.jpg'
+    // },
+    // {
+    //     name: 'Lone Tree Cooler',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/wsyqry1479298485.jpg'
+    // },
+    // {
+    //     name: 'Long Island Tea',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg'
+    // },
+    // {
+    //     name: 'Martinez 2',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg'
+    // },
+    // {
+    //     name: 'Martinez Cocktail',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/wwxwvr1439906452.jpg'
+    // },
+    // {
+    //     name: 'Martini',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg'
+    // },
+    // {
+    //     name: 'Monkey Gland',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/94psp81504350690.jpg'
+    // },
+    // {
+    //     name: 'Mountain Bramble',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg'
+    // },
+    // {
+    //     name: 'Munich Mule',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/rj55pl1582476101.jpg'
+    // },
+    // {
+    //     name: 'National Aquarium',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg'
+    // },
+    // {
+    //     name: 'Negroni',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg'
+    // },
+    // {
+    //     name: 'Orange Oasis',
+    //     instruction: '',
+    //     ingredient: '',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/su1olx1582473812.jpg'
+    // },
+    // {
+    //     name: 'Orange Rosemary Collins',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/mokcas1604179977.jpg'
+    // },
+    // {
+    //     name: 'Paradise',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg'
+    // },
+    // {
+    //     name: 'Pegu Club',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/jfkemm1513703902.jpg'
+    // },
+    // {
+    //     name: 'Pink Gin',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qyr51e1504888618.jpg'
+    // },
+    // {
+    //     name: 'Pink Lady',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/5ia6j21504887829.jpg'
+    // },
+    // {
+    //     name: 'Pink Moon',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/lnjoc81619696191.jpg'
+    // },
+    // {
+    //     name: 'Poppy Cocktail',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/cslw1w1504389915.jpg'
+    // },
+    // {
+    //     name: 'Queen Elizabeth',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/vpqspv1478963339.jpg'
+    // },
+    // {
+    //     name: 'Ramos Gin Fizz',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/967t911643844053.jpg'
+    // },
+    // {
+    //     name: 'Rose',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg'
+    // },
+    // {
+    //     name: 'Rosemary Blue',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qwc5f91512406543.jpg'
+    // },
+    // {
+    //     name: 'Royal Fizz',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/wrh44j1504390609.jpg'
+    // },
+    // {
+    //     name: 'Royal Gin Fizz',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/pe1x1c1504735672.jpg'
+    // },
+    // {
+    //     name: 'Ruby Tuesday',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg'
+    // },
+    // {
+    //     name: 'Salted Toffee Martini',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/3s6mlr1509551211.jpg'
+    // },
+    // {
+    //     name: 'Salty Dog',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/4vfge01504890216.jpg'
+    // },
+    // {
+    //     name: 'Singapore Sling',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/7dozeg1582578095.jpg'
+    // },
+    // {
+    //     name: 'Surf City Lifesaver',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/2rzfer1487602699.jpg'
+    // },
+    // {
+    //     name: 'The Laverstoke',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg'
+    // },
+    // {
+    //     name: 'The Philosopher',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/sp8hkp1596017787.jpg'
+    // },
+    // {
+    //     name: 'The Strange Weaver',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg'
+    // },
+    // {
+    //     name: 'Tom Collins',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/7cll921606854636.jpg'
+    // },
+    // {
+    //     name: 'Turf Cocktail',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg'
+    // },
+    // {
+    //     name: 'Tuxedo Cocktail',
+    //     image: 'https://www.thecocktaildb.com/images/media/drink/4u0nbl1504352551.jpg'
+    // }
 
 ];
 const seedGinDrinks = () => Drink.bulkCreate(ginDrinksData);
