@@ -1,6 +1,6 @@
 // I don't think we need this file anymore -- CR
 
-const { Drink } = require('../models');
+const { Drink } = require('../../models');
 
 const drinkData = [
     {
