@@ -14,6 +14,7 @@
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
+    "eslint": "^8.10.0",
     "express": "^4.17.3",
     "express-handlebars": "^5.3.5",
     "express-session": "^1.17.2",
@@ -28,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/SepidehAyani/mixitup/issues"
   },
-  "homepage": "https://github.com/SepidehAyani/mixitup#readme"
+  "homepage": "https://github.com/SepidehAyani/mixitup#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.5.1"
+  }
 }
