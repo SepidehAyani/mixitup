@@ -15,6 +15,10 @@ Drink.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        type: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+        },
         ingredient: {
             type: DataTypes.STRING,
             allowNull: false,
