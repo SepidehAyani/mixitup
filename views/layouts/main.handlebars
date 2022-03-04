@@ -19,18 +19,18 @@
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/">Home</a>
-        <a href="/logout">Logout</a>
+        <a class ="home-btn" href="/">Home</a>
+        <a class ="logout-btn" href="/logout">Logout</a>
         {{else}}
-        <a href="/login">Login</a>
+        <a class="login-btn" href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
 
       <main>
-          {{!-- <a href="/favorite-drinks">View Favorite Drinks</a> ---style like button? --}}
-          {{!-- <a href="/by-type">Sort by Type</a> ---style like button? --}}
-          {{!-- <a href="/add-custom">Add Custom Creation</a> ---style like button? --}}
+          {{!-- <a class="button" href="/favorite-drinks">View Favorite Drinks</a> ---style like button? --}}
+          {{!-- <a class="button" href="/by-type">Sort by Type</a> ---style like button? --}}
+          {{!-- <a class="button" href="/add-custom">Add Custom Creation</a> ---style like button? --}}
       </main>
 
     
