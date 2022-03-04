@@ -1,0 +1,26 @@
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    {{!-- <h5 class="card-title">{{drink.name}}</h5> --I'm not sure how to reference this Drink.name or drink_name --}}
+    {{!-- <p class="card-text">List {{drink.ingredients drink.instructions}} </p>  also not sure if this is right --}}
+    <a href="/" class="btn btn-primary">Return Home</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <img src="{{drink.image}}"/>
+    <h5 class="card-title">{{drink.name}}</h5>
+    <p class="card-text">{{drink.instructions}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    {{#each drink.ingredients}}
+    <li class="list-group-item">{{drink.ingredients}}</li>
+    {{/each}}
+  </ul>
+  <div class="card-body">
+    {{!-- <a href="/" class="card-link">Return Home</a> --STYLE LIKE BUTTONS?--
+    <button class="favorite-drinks card-link">Save to Favorites</button>  --}}
+  </div>
+</div>
