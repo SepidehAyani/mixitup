@@ -178,92 +178,92 @@ const vodkaDrinksData = [
     },
     {
         name: 'Brain Fart',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and sodas are very cold. Use 1/5 Everclear, 1/5 Vodka, 2 liters Mountain Dew, 2 liters Surge, 1 small bottle Lemon juice, 1 pint Rum.',
+        ingredient: 'Everclear, Vodka, Mountain Dew, Surge, Lemon juice, Rum',
         image: 'https://www.thecocktaildb.com/images/media/drink/rz5aun1504389701.jpg'
     },
     {
         name: 'Bruised Heart',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass. Use 1/2 oz Vodka, 1/2 oz Shambord raspberry liqueur, 1/2 oz Peachtree Schnapps, 1/2 oz Cranberry juice.',
+        ingredient: 'Vodka, Shambord raspberry liqueur, Peachtree Schnapps, Cranberry juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/7if5kq1503564209.jpg'
     },
     {
         name: 'Bubble Gum',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Layer in order into a shot glass. Use 1 part Vodka, 1 part Banana Liqueur, 1 part Orange juice, 1 part Peach Schnapps. ',
+        ingredient: 'Vodka, Banana Liqueur, Orange juice, Peach Schnapps',
         image: 'https://www.thecocktaildb.com/images/media/drink/spuurv1468878783.jpg'
     },
     {
         name: 'Caribbean Orange Liqueur',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pare very thinly the bright-colored rind from the oranges (no white). Blot the peel on paper towels to remove any excess oil. Put peel in a 4 cup screw-top jar. Add 2 cups vodka. Close jar. Store in a cool, dark place for 2 days or until the vodka has absorbed the flavor. Remove peel and add remaining vodka. Close jar and add remaining cup of vodka. Close the jar and store in a cool dark place at least 1 month to age.',
+        ingredient: 'Orange, Vodka, Sugar',
         image: 'https://www.thecocktaildb.com/images/media/drink/qwxuwy1472667570.jpg'
     },
     {
         name: 'Cherry Electric Lemonade',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Stir vigorously and then pour over a large cup of ice. Now drink it with a straw and stir occasionally. Use 1 oz Gin, 1 oz Tequila, 1 oz Vodka, 1 oz White rum, 1 oz Triple sec, 1 oz Cherry Grenadine, 1 oz Sweet and sour, 3 oz Club soda.',
+        ingredient: 'Gin, Tequila, Vodka, White Rum, Triple Sec, Cherry Grenadine, Sweet and Sour, Club Soda',
         image: 'https://www.thecocktaildb.com/images/media/drink/tquyyt1451299548.jpg'
     },
     {
         name: 'Chocolate Black Russian',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Combine all ingredients in an electric blender and blend at a low speed for a short length of time. Pour into a chilled champagne flute and serve. Use 1 oz Kahlua, 1/2 oz Vodka, 5 oz Chocolate ice cream.',
+        ingredient: 'Kahlua, Vodka, Chocolate ice cream',
         image: 'https://www.thecocktaildb.com/images/media/drink/yyvywx1472720879.jpg'
     },
     {
         name: 'Cosmopolitan Martini',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients in mixing glass half filled with ice, shake and strain into chilled Martini glass. Use 1/2 oz Cointreau, 1 oz Vodka, juice of half a Lime, 1 splash Cranberry juice.',
+        ingredient: 'Cointreau, Vodka, Lime, Cranberry juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg'
     },
     {
         name: 'Dirty Martini',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.\r\nRub the rim of a martini glass with the wedge of lemon.\r\nStrain the contents of the cocktail shaker into the glass and add the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive. Use 70 ml Vodka, 1 Tbsp Dry Vermouth, 1 Tbsp Olive Brine, 1 Lemon wedge, 1 Olive.',
+        ingredient: 'Vodka, Dry Vermouth, Olive Brine, Lemon, Olive',
         image: 'https://www.thecocktaildb.com/images/media/drink/vcyvpq1485083300.jpg'
     },
     {
         name: 'Espresso Martini',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass. Use 50 ml Vodka, 10 ml Kahlua, 1 dash sugar syrup.',
+        ingredient: 'Vodka, Kahlua, Sugar syrup',
         image: 'https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg'
     },
     {
         name: 'Figgy Thyme',
-        instruction: '',
-        ingredient: '',
+        instruction: 'In a loose bag, crush up some ice. Pour your precious ice into a collins glass. In a cocktail shaker, muddle the figs and thyme together. Add honey vodka, lemon juice, and a large ice cube. Shake until well chilled, and strain into glass. Add tonic water and finally 2 dashes of angostura bitters. Garnish with sliced figs and thyme. Use 2oz Vodka, 1 tsp Honey, 3 Figs, 1 sprig Thyme, 2 dashes Angostura Bitters, top with Tonic Water.',
+        ingredient: 'Vodka, Honey, Figs, Thyme, Agostura Bitters, Tonic Water',
         image: 'https://www.thecocktaildb.com/images/media/drink/pbw4e51606766578.jpg'
     },
     {
         name: 'Flaming Dr. Pepper',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Add Amaretto, Bacardi, and vodka. Mix in the Dr. Pepper and beer. Use 1 oz Amaretto, 1 oz Vodka, 1 oz Bacardi 151 proof Rum, 1 oz Dr. Pepper, 1 oz beer.',
+        ingredient: 'Amaretto, Vodka, Rum, Dr. Pepper, Beer',
         image: 'https://www.thecocktaildb.com/images/media/drink/d30z931503565384.jpg'
     },
     {
         name: 'Freddy Kruger',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Make it an ample size shot. Use 1/2 oz Jägermeister, 1/2 oz Sambuca, 1/2 oz Vodka.',
+        ingredient: 'Jägermeister, Sambuca, Vodka',
         image: 'https://www.thecocktaildb.com/images/media/drink/tuppuq1461866798.jpg'
     },
     {
         name: 'French Martini',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink. Use 45 ml Vodka, 15 ml Raspberry Liqueur, 15 ml Pineapple juice.',
+        ingredient: 'Vodka, Raspberry Liqueur, Pineapple juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg'
     },
     {
         name: 'Gideons Green Dinosaur',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Add all ingredients in collins glass with ice and stir. Use 1/2 oz Dark rum, 1/2 oz Vodka, 1/2 oz Triple Sec, 1/2 oz Tequila, 1/2 oz Melon liqueur, fill with Mountain Dew.',
+        ingredient: 'Dark rum, Vodka, Triple Sec, Tequila, Melon liqueur, Mountain Dew',
         image: 'https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg'
     },
     {
         name: 'Godchild',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Shake all ingredients well with cracked ice, strain into a champagne flute, and serve. Use 1 oz Vodka, 1 oz Amaretto, 1 oz Heavy cream.',
+        ingredient: 'Vodka, Amaretto, Heavy cream',
         image: 'https://www.thecocktaildb.com/images/media/drink/m5nhtr1504820829.jpg'
     }
 
