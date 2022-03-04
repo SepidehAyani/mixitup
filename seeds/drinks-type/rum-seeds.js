@@ -45,7 +45,7 @@ const rumDrinksData = [
         image: 'https://www.thecocktaildb.com/images/media/drink/t8bgxl1596018175.jpg'
     },
     {
-        name: 'Captain Kidds Punch',
+        name: 'Captain Kidds Punch' ,
         instruction: '',
         ingredient: '',
         image: 'https://www.thecocktaildb.com/images/media/drink/d83spj1596017390.jpg'

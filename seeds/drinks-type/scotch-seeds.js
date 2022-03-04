@@ -82,7 +82,7 @@ const scotchDrinksData = [
         image: 'https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg'
     },
     {
-        name: 'Thriller',
+        name: 'Thriller' ,
         instruction:'In a shaker half-filled with ice cubes, combine 1.5 oz Scotch, 1 oz Wine, 1 oz Orange juice. Shake well. Strain into a cocktail glass.',
         ingredient:'Scotch, Wine, Orange juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg'
@@ -90,7 +90,7 @@ const scotchDrinksData = [
     {
         name: 'Whisky Mac',
         instruction:'Pour both 1.5 oz scotch and 1 oz wine into a wine goblet with no ice.',
-        ingredient:'Scotch, Wine',
+        ingredient:'Scotch, Wine' ,
         image: 'https://www.thecocktaildb.com/images/media/drink/yvvwys1461867858.jpg'
     }
 ];
