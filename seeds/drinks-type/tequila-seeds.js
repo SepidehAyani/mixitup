@@ -3,14 +3,20 @@ const { Drink } = require('../models');
 const tequilaDrinksData = [
   {
     name: '110 in the shade',
+    instruction: 'Drop 16 oz of lager and 1.5 oz of tequila and mix them in a glass.',
+    ingredient: 'Lager, Tequila',
     image: 'https://www.thecocktaildb.com/images/media/drink/xxyywq1454511117.jpg'
   },
   {
     name: '3-Mile Long Island Iced Tea',
+    instruction: 'Fill 14oz glass with ice and alcohol. Fill 2/3 glass with cola and remainder with sweet & sour. Top with dash of bitters and lemon wedge.',
+    ingredient: 'Gin, Light rum, Tequila, Triple sec, Vodka, Coca-Cola, Sweet and sour, Bitters, Lemon',
     image: 'https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg'
   },
   {
     name: 'Adam Bomb',
+    instruction: 'Add ice to blender (or to glass if prefer on the rocks) then fruit, and fruit juice depending on personal preference then add the Rum, Vodka, Tequila, and triple sec. blend till smooth, rim glass with sugar or salt and pour mixture in. garnish with lemon or lime slice.',
+    ingredient: 'Rum, Vodka, Tequila, Triple Sec, Fruit, Ice, Salt, Fruit juice',
     image: 'https://www.thecocktaildb.com/images/media/drink/tpxurs1454513016.jpg'
   },
   {

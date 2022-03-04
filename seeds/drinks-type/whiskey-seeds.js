@@ -1,25 +1,6 @@
 const { Drink } = require('../models');
 
 const whiskeyDrinksData = [
-<<<<<<< Updated upstream
-
-    {
-        name: 'Damned if you do',
-        image:
-          'https://www.thecocktaildb.com/images/media/drink/ql7bmx1503565106.jpg',
-    },
-    {
-        name: 'Hot Toddy',
-        image:
-          'https://www.thecocktaildb.com/images/media/drink/ggx0lv1613942306.jpg',
-    },
-    {
-        name: 'Owens Grandmothers Revenge',
-        image:
-          'https://www.thecocktaildb.com/images/media/drink/0wt4uo1503565321.jpg',
-    },
-
-=======
   {
     name: 'Damned if you do',
     instruction: 'Pour into shot glass of 0.75 oz of whiskey and 0.25 oz of hot damn. Put in mouth. Repeat as deemed necessary.',
@@ -39,7 +20,6 @@ const whiskeyDrinksData = [
     ingredient: 'Whiskey, Beer, Lemonade, Ice',
     image: 'https://www.thecocktaildb.com/images/media/drink/0wt4uo1503565321.jpg'
   },
->>>>>>> Stashed changes
 ];
 const seedWhiskeyDrinks = () => Drink.bulkCreate(whiskeyDrinksData);
 
