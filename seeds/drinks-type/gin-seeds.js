@@ -259,6 +259,7 @@ const ginDrinksData = [
         instruction: '',
         ingredient: '',
         image: 'https://www.thecocktaildb.com/images/media/drink/nzlyc81605905755.jpg'
+<<<<<<< Updated upstream
     },
     {
         name: 'Gin And Tonic',
@@ -307,6 +308,8 @@ const ginDrinksData = [
         instruction: 'Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve. Use 2 oz Gin, juice of 1/2 Lemon, 1 tsp powdered sugar, 1 tsp water, twist of orange peel.',
         ingredient: 'Gin, Lemon, Powdered sugar, Water, orange peel',
         image: 'https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg'
+=======
+>>>>>>> Stashed changes
     }
     // {
     //     name: 'Gin Smash',

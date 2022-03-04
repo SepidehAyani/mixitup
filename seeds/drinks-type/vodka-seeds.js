@@ -4,38 +4,56 @@ const vodkaDrinksData = [
 
     {
         name: '155 Belmont',
+        instruction: 'Blend 1 shot of dark rum, 2 shots of light rum, 1 shot of vodka and 1 shot of orange juice with ice. Serve in a wine glass. Garnish with carrot.',
+        ingredient: 'Dark rum, Light rum, Vodka, Orange juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg'
     },
     {
         name: '501 Blue',
+        instruction: '"Mix equal amounts into a glass with ice.',
+        ingredient: 'Blue Curacao, Blueberry schnapps, Vodka, Sour mix, 7-Up',
         image: 'https://www.thecocktaildb.com/images/media/drink/ywxwqs1461867097.jpg'
     },
     {
         name: '57 Chevy with a White License Plate',
+        instruction: '1. Fill a rocks glass with ice 2.add 1 oz of white creme de cacao and 1 oz of vodka 3.stir',
+        ingredient: 'Creme de Cacao, Vodka',
         image: 'https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg'
     },
     {
         name: '747 Drink',
+        instruction: 'Fill a 1 oz of Collins glass with ice. Pour in 1 oz of vodka, 1 oz of lime cordial, and 1 oz of cranberry juice. Fill up with Sprite. Garnish with a Lime wheel or some cranberries',
+        ingredient: 'Vodka, Roses sweetened lime juice, Cranberry Juice, Sprite',
         image: 'https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg'
     },
     {
         name: 'A midsummernight dream',
+        instruction: 'Mix 5 strawberries in a blender Pour it together with 2 oz of vodka, 1 oz of kirch and 1 tsp strawberry liqueur over ice in a shaker. Shake well and pour in a highball glass. Fill up with the Russchian water',
+        ingredient: 'Vodka, Kirschwasser, Strawberry liqueur, Strawberries, Schweppes Russchian',
         image: 'https://www.thecocktaildb.com/images/media/drink/ysqvqp1461867292.jpg'
     },
     {
         name: 'A.D.M. (After Dinner Mint)',
+        instruction: 'Shake 1/2 oz of white Creme de Menthe, 3/4 oz of southern Comfort, 1/2 oz of vodka and fill with hot chocolate vigorously',
+        ingredient: 'White Creme de Menthe, Southern Comfort, Vodka, Hot chocolate',
         image: 'https://www.thecocktaildb.com/images/media/drink/ruxuvp1472669600.jpg'
     },
     {
         name: 'Absinthe #2',
+        instruction: 'Mix 1 bottle of vodka, 50 gr of sugar, 50 ml pure of anise, 1 tblsp of licorice root, and 1 wormwood together and let sit a few days. Strain through a coffee filter. To serve mix 1 part absinthe to 4 parts water, add ice, enjoy.',
+        ingredient: 'Vodka, Sugar, Anise, Licorice root, Wormwood',
         image: 'https://www.thecocktaildb.com/images/media/drink/uxxtrt1472667197.jpg'
     },
     {
         name: 'Absolutely Fabulous',
+        instruction: 'Mix 1 shot of Vodka and 2 shots of Cranberry juice together in a shaker and strain into a glass. Top up with Champagne.',
+        ingredient: 'Vodka, Cranberry Juice, Champagne',
         image: 'https://www.thecocktaildb.com/images/media/drink/abcpwr1504817734.jpg'
     },
     {
         name: 'Adam Bomb',
+        instruction: 'Add ice to blender (or to glass if prefer on the rocks) then fruit, and fruit juice depending on personal preference then add the 1 shot of Rum, 1 shot of Vodka, 1 shot of Tequila, and 1/2 shot of triple sec. blend till smooth, rim glass with sugar or salt and pour mixture in. garnish with lemon or lime slice.',
+        ingredient: 'Rum, Vodka, Tequila, Triple sec, Fruit, Ice, Salt, Fruit juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/tpxurs1454513016.jpg'
     },
     {
@@ -177,194 +195,6 @@ const vodkaDrinksData = [
     {
         name: 'Godchild',
         image: 'https://www.thecocktaildb.com/images/media/drink/m5nhtr1504820829.jpg'
-    },
-    {
-        name: 'Godmother',
-        image: 'https://www.thecocktaildb.com/images/media/drink/quksqg1582582597.jpg'
-    },
-    {
-        name: 'Greyhound',
-        image: 'https://www.thecocktaildb.com/images/media/drink/g5upn41513706732.jpg'
-    },
-    {
-        name: 'Harvey Wallbanger',
-        image: 'https://www.thecocktaildb.com/images/media/drink/7os4gs1606854357.jpg'
-    },
-    {
-        name: 'Ice Pick',
-        image: 'https://www.thecocktaildb.com/images/media/drink/ypsrqp1469091726.jpg'
-    },
-    {
-        name: 'Irish Curdling Cow',
-        image: 'https://www.thecocktaildb.com/images/media/drink/yrhutv1503563730.jpg'
-    },
-    {
-        name: 'Irish Russian',
-        image: 'https://www.thecocktaildb.com/images/media/drink/swqurw1454512730.jpg'
-    },
-    {
-        name: 'Jello shots',
-        image: 'https://www.thecocktaildb.com/images/media/drink/l0smzo1504884904.jpg'
-    },
-    {
-        name: 'Jitterbug',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg'
-    },
-    {
-        name: 'Kamikaze',
-        image: 'https://www.thecocktaildb.com/images/media/drink/d7ff7u1606855412.jpg'
-    },
-    {
-        name: 'Kiwi Martini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/bmxmyq1630407098.jpg'
-    },
-    {
-        name: 'Kool-Aid Shot',
-        image: 'https://www.thecocktaildb.com/images/media/drink/fegm621503564966.jpg'
-    },
-    {
-        name: 'Kool-Aid Slammer',
-        image: 'https://www.thecocktaildb.com/images/media/drink/kugu2m1504735473.jpg'
-    },
-    {
-        name: 'Lemon Elderflower Spritzer',
-        image: 'https://www.thecocktaildb.com/images/media/drink/125w0o1630407389.jpg'
-    },
-    {
-        name: 'Long Island Iced Tea',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wx7hsg1504370510.jpg'
-    },
-    {
-        name: 'Long Island Tea',
-        image: 'https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg'
-    },
-    {
-        name: 'Long vodka',
-        image: 'https://www.thecocktaildb.com/images/media/drink/9179i01503565212.jpg'
-    },
-    {
-        name: 'Moscow Mule',
-        image: 'https://www.thecocktaildb.com/images/media/drink/3pylqc1504370988.jpg'
-    },
-    {
-        name: 'National Aquarium',
-        image: 'https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg'
-    },
-    {
-        name: 'Orange Crush',
-        image: 'https://www.thecocktaildb.com/images/media/drink/zvoics1504885926.jpg'
-    },
-    {
-        name: 'Orange Whip',
-        image: 'https://www.thecocktaildb.com/images/media/drink/ttyrxr1454514759.jpg'
-    },
-    {
-        name: 'Oreo Mudslide',
-        image: 'https://www.thecocktaildb.com/images/media/drink/tpwwut1468925017.jpg'
-    },
-    {
-        name: 'Passion Fruit Martini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/6trfve1582473527.jpg'
-    },
-    {
-        name: 'Pink Panty Pulldowns',
-        image: 'https://www.thecocktaildb.com/images/media/drink/squsuy1468926657.jpg'
-    },
-    {
-        name: 'Pink Penocha',
-        image: 'https://www.thecocktaildb.com/images/media/drink/6vigjx1503564007.jpg'
-    },
-    {
-        name: 'Popped cherry',
-        image: 'https://www.thecocktaildb.com/images/media/drink/sxvrwv1473344825.jpg'
-    },
-    {
-        name: 'Pornstar Martini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/xjhjdf1630406071.jpg'
-    },
-    {
-        name: 'Radioactive Long Island Iced Tea',
-        image: 'https://www.thecocktaildb.com/images/media/drink/rdvqmh1503563512.jpg'
-    },
-    {
-        name: 'Russian Spring Punch',
-        image: 'https://www.thecocktaildb.com/images/media/drink/ctt20s1504373488.jpg'
-    },
-    {
-        name: 'San Francisco',
-        image: 'https://www.thecocktaildb.com/images/media/drink/szmj2d1504889961.jpg'
-    },
-    {
-        name: 'Screaming Orgasm',
-        image: 'https://www.thecocktaildb.com/images/media/drink/x894cs1504388670.jpg'
-    },
-    {
-        name: 'Screwdriver',
-        image: 'https://www.thecocktaildb.com/images/media/drink/8xnyke1504352207.jpg'
-    },
-    {
-        name: 'Sea breeze',
-        image: 'https://www.thecocktaildb.com/images/media/drink/7rfuks1504371562.jpg'
-    },
-    {
-        name: 'Sex on the Beach',
-        image: 'https://www.thecocktaildb.com/images/media/drink/lijtw51551455287.jpg'
-    },
-    {
-        name: 'Shark Attack',
-        image: 'https://www.thecocktaildb.com/images/media/drink/uv96zr1504793256.jpg'
-    },
-    {
-        name: 'Snowday',
-        image: 'https://www.thecocktaildb.com/images/media/drink/4n1ipk1614009624.jpg'
-    },
-    {
-        name: 'Vesper',
-        image: 'https://www.thecocktaildb.com/images/media/drink/mtdxpa1504374514.jpg'
-    },
-    {
-        name: 'Victory Collins',
-        image: 'https://www.thecocktaildb.com/images/media/drink/lx0lvs1492976619.jpg'
-    },
-    {
-        name: 'Vodka And Tonic',
-        image: 'https://www.thecocktaildb.com/images/media/drink/lmj2yt1504820500.jpg'
-    },
-    {
-        name: 'Vodka Fizz',
-        image: 'https://www.thecocktaildb.com/images/media/drink/xwxyux1441254243.jpg'
-    },
-    {
-        name: 'Vodka Lemon',
-        image: 'https://www.thecocktaildb.com/images/media/drink/mql55h1643820632.jpg'
-    },
-    {
-        name: 'Vodka Martini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/qyxrqw1439906528.jpg'
-    },
-    {
-        name: 'Vodka Russian',
-        image: 'https://www.thecocktaildb.com/images/media/drink/rpttur1454515129.jpg'
-    },
-    {
-        name: 'Vodka Slime',
-        image: 'https://www.thecocktaildb.com/images/media/drink/apex461643588115.jpg'
-    },
-    {
-        name: 'Vodka Tonic',
-        image: 'https://www.thecocktaildb.com/images/media/drink/9koz3f1643821062.jpg'
-    },
-    {
-        name: 'White Russian',
-        image: 'https://www.thecocktaildb.com/images/media/drink/vsrupw1472405732.jpg'
-    },
-    {
-        name: 'Zipperhead',
-        image: 'https://www.thecocktaildb.com/images/media/drink/r2qzhu1485620235.jpg'
-    },
-    {
-        name: 'Zorbatini',
-        image: 'https://www.thecocktaildb.com/images/media/drink/wtkqgb1485621155.jpg'
     }
 
 ];

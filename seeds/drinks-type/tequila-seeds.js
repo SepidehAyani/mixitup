@@ -47,6 +47,8 @@ const tequilaDrinksData = [
   },
   {
     name: 'Margarita',
+    instruction: 'Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass. Use 1.5 oz Tequila, 0.5 oz of Triple sec and 1 oz of lime juice',
+    ingredient: 'Tequila, Triple sec, Lime juice, Salt',
     image: 'https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg'
   },
   {
