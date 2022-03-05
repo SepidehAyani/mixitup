@@ -10,7 +10,7 @@ const newPostHandler = async (event) => {
     if (drink_name && drink_type && ingredient && instruction) {
         const response = await fetch('/api/drinks/add-drink', {
             method: 'POST',
-            body: JSON.stringify({ drink_name, drink_type, ingredient, instruction}),
+            body: JSON.stringify({ drink_name, drink_type, ingredient, instruction }),
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -21,7 +21,7 @@ const newPostHandler = async (event) => {
         }
 
     } else {
-        alert('Must fill drink name, drink type, ingredient and instruction!')
+        alert('Must fill drink name, drink type, ingredient and instruction!');
     }
 };
 
