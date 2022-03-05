@@ -46,92 +46,92 @@ const rumDrinksData = [
     },
     {
         name: 'Captain Kidds Punch' ,
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix 2 shot Rum, 1 shot Lime juice, 1 shot Egg White, a dash bitters, and sugar together in a shaker and strain into a collins glass. Use Caribbean dark Rum for a sweeter taste.',
+        ingredient: 'Rum, Lime juice, Egg White, bitters, Sugar, Nutmeg ',
         image: 'https://www.thecocktaildb.com/images/media/drink/d83spj1596017390.jpg'
     },
     {
         name: 'Espresso Rumtini',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix 1 shot Rum, 1/2 shot Vanilla syrup, 1 shot Espresso, 1 shot Coffee in a cocktail glass. Garnish with some chocolate powder and coffee beans',
+        ingredient: 'Rum, Vanilla syrup, Espresso, Coffee',
         image: 'https://www.thecocktaildb.com/images/media/drink/acvf171561574403.jpg'
     },
     {
         name: 'Funk and Soul',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix 2 shots Rum, 1 shot Apricot Nectar, 1 shot Pomegranate juice, 1/2 shot lemon juice , Soda water together and strain into a Collins glass. Use Jamaican rum where possible for a more authentic taste.',
+        ingredient: 'Rum, Apricot Nectar, Pomegranate juice, lemon juice , Soda water',
         image: 'https://www.thecocktaildb.com/images/media/drink/qtv83q1596015790.jpg'
     },
     {
         name: 'Hemingway Special',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients into a shaker with ice. Shake.',
+        ingredient: 'Rum, Grapefruit juice, Maraschino Liqueur, Lime Juice',
         image: 'https://www.thecocktaildb.com/images/media/drink/jfcvps1504369888.jpg'
     },
     {
         name: 'Jamaican Coffee',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Stir the rum, coffee and water together. Top with the whipped cream. Sprinkle with a pinch of well ground coffee and drink with a straw.',
+        ingredient: 'Rum, Coffee, Water, Whipped cream',
         image: 'https://www.thecocktaildb.com/images/media/drink/xqptps1441247257.jpg'
     },
     {
         name: 'National Aquarium',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients into a shaker of ice. Shake well. Serve on the rocks.',
+        ingredient: 'Rum, Vodka, Gin, Blue Curacao, Sour mix, Lemon-Lime soda',
         image: 'https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg'
     },
     {
         name: 'Orange Whip',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour ingredients over ice and stir.',
+        ingredient: 'Orange juice, Rum, Vodka, Cream, Ice',
         image: 'https://www.thecocktaildb.com/images/media/drink/ttyrxr1454514759.jpg'
     },
     {
         name: 'Pure Passion',
-        instruction: '',
-        ingredient: '',
+        instruction: '"Mix up all ingredients with a cocktail stirrer and serve with crushed ice with mint and edible flour if available.',
+        ingredient: 'Rum, Passoa, Lime juice, Passion fruit syrup, Peach bitters, mint',
         image: 'https://www.thecocktaildb.com/images/media/drink/4tymma1604179273.jpg'
     },
     {
         name: 'Radioactive Long Island Iced Tea',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour all ingredients over ice in a very tall glass. Sip cautiously.',
+        ingredient: 'Rum, Vodka, Tequila, Gin, Triple sec, Chambord raspberry liqueur, Midori melon liqueur, Malibu rum',
         image: 'https://www.thecocktaildb.com/images/media/drink/rdvqmh1503563512.jpg'
     },
     {
         name: 'Rum Cooler',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Pour the rum and soda into a collins glass almost filled with ice cubes. Stir well and garnish with the lemon wedge.',
+        ingredient: 'Rum, Lemon-lime soda, Lemon',
         image: 'https://www.thecocktaildb.com/images/media/drink/2hgwsb1504888674.jpg'
     },
     {
         name: 'Rum Punch',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix all ingredients in a punch bowl and serve.',
+        ingredient: 'Rum, Ginger ale, Fruit punch, Orange juice, ice',
         image: 'https://www.thecocktaildb.com/images/media/drink/wyrsxu1441554538.jpg'
     },
     {
         name: 'Rum Toddy',
-        instruction: '',
-        ingredient: '',
+        instruction: '"Dissolve powdered sugar in water in an old-fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve.',
+        ingredient: 'Rum, Powdered sugar, Lemon peel, Water',
         image: 'https://www.thecocktaildb.com/images/media/drink/athdk71504886286.jpg'
     },
     {
         name: 'Spice 75',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Gently warm 60g golden caster sugar in a pan with 30ml water and 1 tbsp allspice. Cook gently until the sugar has dissolved, then leave the mixture to cool. Strain through a sieve lined with a coffee filter (or a double layer of kitchen paper). Pour 60ml of the spiced syrup into a cocktail shaker along with 200ml rum and 90ml lime juice. Shake with ice and strain between six flute glasses. Top up with 600ml champagne and garnish each with an orange twist.',
+        ingredient: 'Sugar, Allspice, Rum, Lime juice, Champagne, Orange Spiral',
         image: 'https://www.thecocktaildb.com/images/media/drink/0108c41576797064.jpg'
     },
     {
         name: 'Zippys Revenge',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Mix Kool-Aid to taste then add Rum and ammaretto. shake well to dissolve the sugar in the Kool-Aid... serve cold',
+        ingredient: 'Amaretto, Rum, Kool-Aid',
         image: 'https://www.thecocktaildb.com/images/media/drink/1sqm7n1485620312.jpg'
     },
     {
         name: 'Zombie',
-        instruction: '',
-        ingredient: '',
+        instruction: 'Blend at high speed for no more than 5 seconds. Pour into a glass, add ice cubes to fill, then add the garnish. Donns mix: Bring 3 crushed cinnamon sticks, 1 cup of sugar and 1 cup of water to a boil, stirring until the sugar is dissolved. Simmer for 2 minutes, then remove from the heat and let sit for at least 2 hours before straining into a clean glass bottle. Then add 1 part of the syrup and 2 parts of fresh grapefruit juice together.',
+        ingredient: 'Rum, Gold Rum, 151 proof rum, Pernod, Grenadine, Lime juice, Angostura Bitters',
         image: 'https://www.thecocktaildb.com/images/media/drink/2en3jk1509557725.jpg'
     }
 
