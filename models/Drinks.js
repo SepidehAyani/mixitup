@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Instruction extends Model { }
+class Drinks extends Model { }
 
-Instruction.init(
+Drinks.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,14 +11,21 @@ Instruction.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        content: {
+        drink_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        date: {
-            type: DataTypes.DATE,
+        drink_type: {
+            type: DataTypes.BOOLEAN,
             allowNull: false,
-            defaultValue: DataTypes.NOW,
+        },
+        ingredient: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        instruction: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -27,14 +34,18 @@ Instruction.init(
                 key: 'id'
             },
         },
+        created_at: {
+            type: DataTypes.DATETIME,
+            allowNull: false,
+        },
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'instruction',
+        modelName: 'drink',
     }
 );
 
-module.exports = Instruction;
+module.exports = Drinks;

@@ -1,5 +1,5 @@
-const User = require('./User');
-const Drink = require('./Drink');
+const User = require('./Users');
+const Drink = require('./Drinks');
 const Ingredient = require('./Ingredient');
 const Instruction = require('./Instruction')
 
