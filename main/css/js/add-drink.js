@@ -5,7 +5,7 @@ const newPostHandler = async (event) => {
     const drink_name = document.querySelector('#drink-name-entry').value.trim();
     const drink_type = document.querySelector('#drink-type-entry').value.trim();
     const ingredient = document.querySelector('#ingredient-entry').value.trim();
-    const instruction = document.querySelector('#instruction-log').value.trim();
+    const instruction = document.querySelector('#instruction-entry').value.trim();
 
     if (drink_name && drink_type && ingredient && instruction) {
         const response = await fetch('/api/drinks/add-drink', {
