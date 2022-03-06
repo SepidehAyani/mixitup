@@ -1,4 +1,4 @@
-const newPostHandler = async (event) => {
+const newDrinkHandler = async (event) => {
 
     event.preventDefault();
 
@@ -25,4 +25,4 @@ const newPostHandler = async (event) => {
     }
 };
 
-document.querySelector('#newFormBtn').addEventListener('click', newPostHandler);
+document.querySelector('#newDrinkBtn').addEventListener('click', newDrinkHandler);

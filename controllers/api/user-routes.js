@@ -1,153 +1,113 @@
-//-------------------->WIP<-------------------//
-// const router = require('express').Router();
-// const { Drinks, Types, Users } = require('../../models');
+const router = require('express').Router();
+const { Drinks, Types, Users } = require('../../models');
 
-// // get all users
-// router.get('/', (req, res) => {
-//   User.findAll({
-//     attributes: { exclude: ['password'] }
-//   })
-//     .then(dbUserData => res.json(dbUserData))
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
+// Get all users
+router.get('/', (req, res) => {
+    Users.findAll({
+        attributes: { exclude: ['password'] }
+    })
+        .then(usersData => res.json(usersData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 
-// router.get('/:id', (req, res) => {
-//   User.findOne({
-//     attributes: { exclude: ['password'] },
-//     where: {
-//       id: req.params.id
-//     },
-//     include: [
-//       {
-//         model: Post,
-//         attributes: ['id', 'title', 'post_content', 'created_at']
-//       },
-//       {
-//         model: Comment,
-//         attributes: ['id', 'comment_text', 'created_at'],
-//         include: {
-//           model: Post,
-//           attributes: ['title']
-//         }
-//       }
-//     ]
-//   })
-//     .then(dbUserData => {
-//       if (!dbUserData) {
-//         res.status(404).json({ message: 'No user found with this id' });
-//         return;
-//       }
-//       res.json(dbUserData);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
+// Get user by user id
+router.get('/:id', (req, res) => {
+    Users.findOne({
+        attributes: { exclude: ['password'] },
+        where: {
+            id: req.params.id
+        },
+        include: [
+=      {
+                model: Drinks,
+                attributes: ['drink_name', 'drink_type', 'ingredient', 'instruction', 'user_id'],
+            },
+            {
+                model: Types,
+                attributes: ['type_id', 'type_name'],
+            }
+        ]
+    })
+        .then(usersData => {
+            if (!usersData) {
+                res.status(404).json({ message: 'No user found with this id' });
+                return;
+            }
+            res.json(usersData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 
-// router.post('/', (req, res) => {
-//   // expects {username: 'Lernantino', password: 'password1234'}
-//   User.create({
-//     username: req.body.username,
-//     password: req.body.password
-//   })
-//     .then(dbUserData => {
-//       req.session.save(() => {
-//         req.session.user_id = dbUserData.id;
-//         req.session.username = dbUserData.username;
-//         req.session.loggedIn = true;
+// Create a new user
+router.post('/', (req, res) => {
+    // expects {username: 'Lernantino', password: 'password1234', email: 'Lernantino@yahoo.com'}
+    Users.create({
+        username: req.body.username,
+        pw: req.body.pw,
+        email: req.body.email
+    })
+        .then(usersData => {
+            req.session.save(() => {
+                req.session.user_id = usersData.id;
+                req.session.username = usersData.username;
+                req.session.email = usersData.email;
+                req.session.loggedIn = true;
 
-//         res.json(dbUserData);
-//       });
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
+                res.json(usersData);
+            });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
 
-// router.post('/login', (req, res) => {
-//   // expects {password: 'lernantino', password: 'password1234'}
-//   User.findOne({
-//     where: {
-//       username: req.body.username
-//     }
-//   }).then(dbUserData => {
-//     if (!dbUserData) {
-//       res.status(400).json({ message: 'No user with that username!' });
-//       return;
-//     }
+// Login
+router.post('/login', (req, res) => {
+    // expects {password: 'lernantino', password: 'password1234'}
+    Users.findOne({
+        where: {
+            username: req.body.username
+        }
+    }).then(usersData => {
+        if (!usersData) {
+            res.status(400).json({ message: 'No user with this username!' });
+            return;
+        }
 
-//     const validPassword = dbUserData.checkPassword(req.body.password);
+        const validPassword = usersData.checkPassword(req.body.pw);
 
-//     if (!validPassword) {
-//       res.status(400).json({ message: 'Incorrect password!' });
-//       return;
-//     }
+        if (!validPassword) {
+            res.status(400).json({ message: 'Incorrect password! Please try again.' });
+            return;
+        }
 
-//     req.session.save(() => {
-//       req.session.user_id = dbUserData.id;
-//       req.session.username = dbUserData.username;
-//       req.session.loggedIn = true;
+        req.session.save(() => {
+            req.session.user_id = usersData.id;
+            req.session.username = usersData.username;
+            req.session.email = usersData.email;
+            req.session.loggedIn = true;
 
-//       res.json({ user: dbUserData, message: 'You are now logged in!' });
-//     });
-//   });
-// });
+            res.json({ user: usersData, message: 'You are now logged in!' });
+        });
+    });
+});
 
-// router.post('/logout', (req, res) => {
-//   if (req.session.loggedIn) {
-//     req.session.destroy(() => {
-//       res.status(204).end();
-//     });
-//   } else {
-//     res.status(404).end();
-//   }
-// });
+// Logout
+router.post('/logout', (req, res) => {
+    if (req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    } else {
+        res.status(404).end();
+    }
+});
 
-// router.put('/:id', (req, res) => {
-//   // expects {username: 'Lernantino', password: 'password1234'}
-
-//   // pass in req.body instead to only update what's passed through
-//   User.update(req.body, {
-//     individualHooks: true,
-//     where: {
-//       id: req.params.id
-//     }
-//   })
-//     .then(dbUserData => {
-//       if (!dbUserData) {
-//         res.status(404).json({ message: 'No user found with this id' });
-//         return;
-//       }
-//       res.json(dbUserData);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
-// router.delete('/:id', (req, res) => {
-//   User.destroy({
-//     where: {
-//       id: req.params.id
-//     }
-//   })
-//     .then(dbUserData => {
-//       if (!dbUserData) {
-//         res.status(404).json({ message: 'No user found with this id' });
-//         return;
-//       }
-//       res.json(dbUserData);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
-// module.exports = router;
+module.exports = router;
