@@ -33,11 +33,7 @@ Drinks.init(
                 model: 'user',
                 key: 'id'
             },
-        },
-        created_at: {
-            type: DataTypes.DATETIME,
-            allowNull: false,
-        },
+        }
     },
     {
         sequelize,

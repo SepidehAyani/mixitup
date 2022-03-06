@@ -27,12 +27,12 @@ Users.init(
                 isEmail: true,
             }
         },
-        // Password must be at least 8 characters
+        // Password must be at least 8 characters, max 16 characters
         pw: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [8],
+                len: [8, 16],
             },
         },
     },

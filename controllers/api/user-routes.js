@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         include: [
-=      {
+            {
                 model: Drinks,
                 attributes: ['drink_name', 'drink_type', 'ingredient', 'instruction', 'user_id'],
             },

@@ -11,8 +11,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -42,8 +41,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -73,8 +71,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -104,8 +101,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -135,8 +131,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -166,8 +161,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -197,8 +191,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
@@ -228,8 +221,7 @@ router.get('/', (req, res) => {
       'drink_type',
       'ingredient',
       'instruction',
-      'user_id',
-      'created_at'
+      'user_id'
     ],
     include: [
       {
