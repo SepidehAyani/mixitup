@@ -27,6 +27,10 @@ Drink.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        image: {
+            type: DataTypes.BLOB,
+            allowNull: false,
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
