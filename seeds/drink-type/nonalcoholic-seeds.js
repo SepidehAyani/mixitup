@@ -1,4 +1,4 @@
-const { Drinks } = require('../drink-type/nonalcoholic-seeds');
+const { Drink } = require('../../models');
 
 // Options for non-alcoholic beverages
 

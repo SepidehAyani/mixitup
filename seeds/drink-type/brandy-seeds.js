@@ -1,4 +1,4 @@
-const { Drinks } = require('../drink-type/brandy-seeds');
+const { Drink } = require('../../models');
 
 const brandyDrinksData = [
 

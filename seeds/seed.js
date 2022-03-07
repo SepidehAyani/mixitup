@@ -9,7 +9,7 @@ const seedTequila = require('./drink-type/tequila-seeds');
 const seedVodka = require('./drink-type/vodka-seeds');
 const seedWhiskey = require('./drink-type/whiskey-seeds');
 
-const seedBeverageTypes = require('./beverage-type-seeds');
+// const seedBeverageTypes = require('./beverage-type-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -45,8 +45,8 @@ const seedAll = async () => {
   await seedWhiskey();
   console.log('--------------');
 
-  await seedBeverageTypes();
-  console.log('--------------');
+  // await seedBeverageTypes();
+  // console.log('--------------');
 
   process.exit(0);
   } catch (error) {

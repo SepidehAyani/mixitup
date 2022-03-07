@@ -1,5 +1,5 @@
-const User = require('./Users');
-const Drink = require('./Drinks');
+const User = require('../models/User');
+const Drink = require('../models/Drink');
 
 // User has one:many relationship to Drink
 User.hasMany(Drink, {
