@@ -1,6 +1,3 @@
-// Perhaps user data here will store favorite drinks?
-// Create another file for user/created drinks, or store here too?
-
 const { User } = require('../models');
 
 const userdata = [
