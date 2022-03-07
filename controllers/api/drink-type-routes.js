@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Drinks, Users, Types } = require('../../models');
+const { Drink, User, Type } = require('../../models');
 
 // Get all drinks by type: Brandy
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -15,11 +15,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Gin
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -45,11 +45,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -64,7 +64,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: non-alcoholic
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -75,11 +75,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -94,7 +94,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Rum
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -105,11 +105,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -124,7 +124,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Scotch
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -135,11 +135,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -154,7 +154,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Tequila
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -165,11 +165,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -184,7 +184,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Vodka
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -195,11 +195,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -214,7 +214,7 @@ router.get('/', (req, res) => {
 // Get all drinks by type: Whiskey
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -225,11 +225,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]

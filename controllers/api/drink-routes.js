@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Drinks, Users, Types } = require('../../models');
+const { Drink, User, Type } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Get all drinks
 router.get('/', (req, res) => {
   console.log('======================');
-  Drinks.findAll({
+  Drink.findAll({
     attributes: [
       'id',
       'drink_name',
@@ -16,11 +16,11 @@ router.get('/', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 
 // Get drink by drink id
 router.get('/:id', (req, res) => {
-  Drinks.findOne({
+  Drink.findOne({
     where: {
       id: req.params.id
     },
@@ -49,11 +49,11 @@ router.get('/:id', (req, res) => {
     ],
     include: [
       {
-        model: Types,
+        model: Type,
         attributes: ['type_id', 'type_name'],
       },
       {
-        model: Users,
+        model: User,
         attributes: ['id', 'username', 'email', 'pw']
       }
     ]
@@ -74,7 +74,7 @@ router.get('/:id', (req, res) => {
 // Create a new drink
 router.post('/', withAuth, (req, res) => {
   // expects {drink_name: '', drink_type: '', ingredient: '', instruction: '', user_id: ''}
-  Drinks.create({
+  Drink.create({
     drink_name: req.body.drink_name,
     drink_type: req.body.drink_type,
     ingredient: req.body.ingredient,
@@ -90,7 +90,7 @@ router.post('/', withAuth, (req, res) => {
 
 // Edit a drink
 router.put('/:id', withAuth, (req, res) => {
-  Drinks.update(
+  Drink.update(
     {
       drink_name: req.body.drink_name,
       drink_type: req.body.drink_type,
@@ -119,7 +119,7 @@ router.put('/:id', withAuth, (req, res) => {
 // Delete a drink
 router.delete('/:id', withAuth, (req, res) => {
   console.log('id', req.params.id);
-  Drinks.destroy({
+  Drink.destroy({
     where: {
       id: req.params.id
     }

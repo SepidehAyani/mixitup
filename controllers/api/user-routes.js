@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Drinks, Types, Users } = require('../../models');
+const { Drink, Type, User } = require('../../models');
 
 // Get all users
 router.get('/', (req, res) => {
-    Users.findAll({
-        attributes: { exclude: ['password'] }
+    User.findAll({
+        attributes: { exclude: ['pw'] }
     })
         .then(usersData => res.json(usersData))
         .catch(err => {
@@ -15,18 +15,18 @@ router.get('/', (req, res) => {
 
 // Get user by user id
 router.get('/:id', (req, res) => {
-    Users.findOne({
-        attributes: { exclude: ['password'] },
+    User.findOne({
+        attributes: { exclude: ['pw'] },
         where: {
             id: req.params.id
         },
         include: [
             {
-                model: Drinks,
+                model: Drink,
                 attributes: ['drink_name', 'drink_type', 'ingredient', 'instruction', 'user_id'],
             },
             {
-                model: Types,
+                model: Type,
                 attributes: ['type_id', 'type_name'],
             }
         ]
@@ -47,7 +47,7 @@ router.get('/:id', (req, res) => {
 // Create a new user
 router.post('/', (req, res) => {
     // expects {username: 'Lernantino', password: 'password1234', email: 'Lernantino@yahoo.com'}
-    Users.create({
+    User.create({
         username: req.body.username,
         pw: req.body.pw,
         email: req.body.email
@@ -71,7 +71,7 @@ router.post('/', (req, res) => {
 // Login
 router.post('/login', (req, res) => {
     // expects {password: 'lernantino', password: 'password1234'}
-    Users.findOne({
+    User.findOne({
         where: {
             username: req.body.username
         }
