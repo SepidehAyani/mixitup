@@ -1,38 +1,21 @@
-const User = require('./User');
-const Drink = require('./Drink');
-const Ingredient = require('./Ingredient');
-const Instruction = require('./Instruction')
+const User = require('../models/User');
+const Drink = require('../models/Drink');
+const Type = require('../models/Type');
 
 // User has one:many relationship to Drink
 User.hasMany(Drink, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
 });
+
 // Drink has many:one relationship to User
 Drink.belongsTo(User, {
     foreignKey: 'user_id'
 });
-// User has one:many relationship to ingredient
-User.hasMany(Ingredient, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE'
-});
-// Ingredient has many:one relationship to user
-Ingredient.belongsTo(User, {
-    foreignKey: 'user_id',
-});
-// Drink has many:one relationship to ingredient
-Drink.hasMany(Ingredient, {
-    foreignKey: 'drink_id',
-    onDelete: 'CASCADE',
-})
-// Ingredient has many:one relationship to drink
-Ingredient.belongsTo(Drink, {
-    foreignKey: 'drink_id',
-});
-// Instruction belongs to one drink
-Instruction.belongsTo(Drink, {
-    foreignKey: 'drink_id',
+
+// Drink has one:one relationship to User
+Drink.hasOne(Type, {
+    foreignKey: 'type_id'
 });
 
-module.exports = { User, Drink, Ingredient, Instruction };
+module.exports = { User, Drink, Type };

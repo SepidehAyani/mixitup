@@ -1,46 +1,23 @@
-// Perhaps user data here will store favorite drinks?
-// Create another file for user/created drinks, or store here too?
+const { User } = require('../models');
 
-// const { Drink } = require('../models');
-// // const { User } = require('../models');
-
-const userDrinksData = [
+const userdata = [
   {
-    // user_id,
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
-    // drink_id
-    drink_name: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'drink',
-        key: 'id',
-      },
-    },
-    // user_name,
-    user_id: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'user',
-        key: 'name',
-      },
-    },
-    // drink_id
-    drink_name: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'drink',
-        key: 'name',
-      },
-    },
+    username: 'alesmonde0',
+    email: 'nwestnedge0@cbc.ca',
+    pw: 'password123'
   },
+  {
+    username: 'jwilloughway1',
+    email: 'rmebes1@sogou.com',
+    pw: 'password123'
+  },
+  {
+    username: 'iboddam2',
+    email: 'cstoneman2@last.fm',
+    pw: 'password123'
+  }
 ];
 
-const userDrinks = () => Drink.bulkCreate(userDrinksData);
+const seedUsers = () => User.bulkCreate(userdata, {individualHooks: true});
 
-module.exports = userDrinks;
+module.exports = seedUsers;
