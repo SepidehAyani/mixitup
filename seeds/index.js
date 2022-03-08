@@ -14,7 +14,7 @@ const seedWhiskey = require('./drink-type/whiskey-seeds');
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
-  console.log('inside seedAll');
+  try {console.log('inside seedAll');
   await sequelize.sync({ force: true });
   console.log('--------------');
 
@@ -59,6 +59,9 @@ const seedAll = async () => {
   console.log('before process.exit');
   process.exit(0);
   console.log('after process.exit');
+  } catch (error) {
+    console.log(err);
+  }
 };
 console.log('before seedAll');
 seedAll();
