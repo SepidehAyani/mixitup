@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
 
 // Get all drinks
 router.get('/', (req, res) => {
-  console.log('======================');
+  console.log('==========Get All Drinks ============');
   Drink.findAll({
     attributes: [
       'id',
