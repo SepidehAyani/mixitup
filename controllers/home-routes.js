@@ -14,6 +14,60 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Render Login Page
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
+});
+
+// Render registration page
+router.get('/register', async (req, res) => {
+    try {
+        res.render('register');
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Get a Single Drink
 // router.get('/drink/:id', (req, res) => {
 //   Drink.findOne({
@@ -146,23 +200,6 @@ router.get('/', async (req, res) => {
 //     });
 // });
 
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-
-  res.render('login');
-});
-
-// Direct to registration page
-router.get('/registration', (req, res) => {
-  if (req.session.loggedIn){
-    res.redirect('/');
-    return;
-  }
-  res.render('registration');
-});
 
 
 

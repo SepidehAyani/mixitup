@@ -1,4 +1,4 @@
-async function registrationHandler(event) {
+async function registrationFormHandler(event) {
     event.preventDefault();
     // need to create login page under views; also need to create model: User
     const username = document.querySelector('#username-signup').value.trim();
@@ -24,4 +24,4 @@ async function registrationHandler(event) {
     }
   }
 
-  document.querySelector('.register-form').addEventListener('submit', registrationHandler);
+  document.querySelector('#registerBtn').addEventListener('submit', registrationFormHandler);

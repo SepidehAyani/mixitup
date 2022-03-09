@@ -45,28 +45,20 @@ router.get('/:id', (req, res) => {
 });
 
 // Create a new user
-router.post('/', (req, res) => {
-    // expects {username: 'Lernantino', password: 'password1234', email: 'Lernantino@yahoo.com'}
-    User.create({
-        username: req.body.username,
-        pw: req.body.pw,
-        email: req.body.email
-    })
-        .then(usersData => {
-            req.session.save(() => {
-                req.session.user_id = usersData.id;
-                req.session.username = usersData.username;
-                req.session.email = usersData.email;
-                req.session.loggedIn = true;
-
-                res.json(usersData);
-            });
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
-});
+router.post('/registerUser', async (req, res) => {
+    try {
+      const userData = await User.create(req.body);
+      req.session.save(() => {
+        req.session.user_id = userData.id;
+        req.session.logged_in = true;
+  
+        res.status(200).json(userData);
+      });
+      res.render('home');
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  });
 
 // Login
 router.post('/login', (req, res) => {

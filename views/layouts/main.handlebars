@@ -22,27 +22,17 @@
               <a class='nav-link' aria-current='page' href='/'>Home</a>
             </li>
             <li class='nav-item'>
-              <a
-                class='nav-link'
-                href='/drink-by-type'
-                id='DrinkByType'
-              >Beverage Type</a>
-            </li>
-            <li class='nav-item'>
               <a class='nav-link' href='/add-drink' id='AddDrink'>New Drink</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='/edit-drink' id='editDrinkBtn'>Edit Drink</a>
-            </li>
-            <li class='nav-item'>
               <a
-                class='nav-link' href='/save-to-favorites' id='SaveToFav'>Favorites</a>
+                class='nav-link'
+                href='/save-to-favorites'
+                id='SaveToFav'
+              >Favorites</a>
             </li>
             <li class='nav-item' id='login'>
               <a class='nav-link' href='/login'>Login</a>
-            </li>
-              <li class='nav-item' id='registration'>
-              <a class='nav-link' href='/registration'>Register</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#' id='logout'>Logout</a>
@@ -51,6 +41,14 @@
         </div>
       </div>
     </nav>
+    <div>
+      <li class='nav-item'>
+        <a class='nav-link' href='/drink-by-type' id='DrinkByType'>Beverage Type</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' href='/edit-drink' id='editDrinkBtn'>Edit Drink</a>
+      </li>
+    </div>
 
     {{{body}}}
 
@@ -60,7 +58,6 @@
     {{#if logged_in}}
       <script src='/js/add-drink.js'></script>
       <script src='/js/edit-drink.js'></script>
-      {{!-- <script src='/js/save-to-favorites.js'></script> --}}
       <script src='/js/logout.js'></script>
     {{/if}}
 
