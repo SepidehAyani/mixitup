@@ -4,12 +4,16 @@ const seedDrinksData = require('./drink-seeds');
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
-  await sequelize.sync({ force: true });
   console.log('-------Syncing Database-------');
-  await seedUsers();
+  await sequelize.sync({ force: true });
+
   console.log('-------Seeding Users-------');
-  await seedDrinksData();
+  await seedUsers();
+
   console.log('-------Seeding Drinks-------');
+  await seedDrinksData();
+
   process.exit(0);
 };
+
 seedAll();
