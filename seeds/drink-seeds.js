@@ -287,23 +287,6 @@ const drinksData = [
     user_id: 2,
   },
   {
-    name: 'Gin and Soda',
-    instruction: '',
-    ingredient: '',
-    image:
-      'https://www.thecocktaildb.com/images/media/drink/nzlyc81605905755.jpg',
-    user_id: 2,
-  },
-  {
-    name: 'Gin And Tonic',
-    instruction:
-      'Pour the Gin and Soda water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge. Use 2 oz Gin, 5 oz Soda Water, 1/4 Lime.',
-    ingredient: 'Gin, Soda Water, Lime',
-    image:
-      'https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg',
-    user_id: 2,
-  },
-  {
     drink_name: 'Gin Fizz',
     drink_type: 'Gin',
     instruction:
@@ -863,7 +846,7 @@ const drinksData = [
   },
   {
     drink_name: 'Adam Sunrise',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Fill blender up with ice. Fill half with Bartons Vodka. Put 10 tsp of sugar, add 1/2 can lemonade concentrate, fill to top with water. Blend for 60 seconds. Use 1/2 shot Vodka, 1/2 can Lemonade, 1/2 Water, 10 tsp Sugar',
     ingredient: 'Vodka, Lemonade, Water, Sugar',
@@ -873,7 +856,7 @@ const drinksData = [
   },
   {
     drink_name: 'Addison Special',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Combine ingredients in the order listed into a shaker. Fill half full with ice and shake well. Strain into glass with ice and garnish with a cherry and orange wedge. Use 1 shot Vodka, 1 Tbsp Grenadine, fill with Orange juice.',
     ingredient: 'Vodka, Grenadine, Orange juice',
@@ -883,7 +866,7 @@ const drinksData = [
   },
   {
     drink_name: 'After sex',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice. To make it beautiful make the top of the glass with a grenadine and sugar. Use 20 ml vodka, 10 ml Creme de Banana, fill with juice.',
     ingredient: 'Vodka, Creme de Banana, Orange juice',
@@ -893,7 +876,7 @@ const drinksData = [
   },
   {
     drink_name: 'Apricot punch',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour all ingrediants into a large punch bowl. Add ice and 4 oranges that are peeled and divided. Use 1 quart Apricot Brandy, 4/5 Champagne, 1/5 Vodka, 4 Liters 7-Up, and 1/2 gallon Orange juice.',
     ingredient: 'Apricot Brandy, Champagne, Vodka, 7-Up, and Orange juice.',
@@ -903,7 +886,7 @@ const drinksData = [
   },
   {
     drink_name: 'Arctic Fish',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Fill glass with ice and fish, add vodka, grape soda and orange juice. DO NOT STIR!!!!! Serve well chilled. Use 1/3 part Vodka, 1/3 part Grape soda, 1/3 part Orange juice, lots of Ice, 1 piece candy.',
     ingredient: 'Vodka, Grape soda, Orange juice, Ice, Candy',
@@ -913,7 +896,7 @@ const drinksData = [
   },
   {
     drink_name: 'Arizona Antifreeze',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour all ingredients into shot glass and slam !!!! Use 1/3 oz Vodka, 1/3 oz Midori melon liqueur, 1/3 oz Sweet and Sour.',
     ingredient: 'Vodka, Midori melon liqueur, Sweet and Sour',
@@ -923,7 +906,7 @@ const drinksData = [
   },
   {
     drink_name: 'Arizona Twister',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Mix in the shots of rum, vodka, and tequila. Add splashes of the three juices, heavy on the pineapple. Top off with grenadine. Crushed ice should already be in glass. Top off the glass with a pineapple wedge. Use 1 shot Vodka, 1 shot Malibu rum, 1 shot Gold tequila, 1 splash Orange juice, 1 splash Pineapple juice, 1 splash Cream of coconut, 1 dash Grenadine, crushed Ice, 1 wedege Pineapple.',
     ingredient:
@@ -934,7 +917,7 @@ const drinksData = [
   },
   {
     drink_name: 'Army special',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour Vodka, Gin and lime cordial into glass, and top up with crushed ice. Wait for ice to melt slightly and sip without a straw. Use 30 ml Vodka, 30 ml Gin, 45 ml Lime juice cordial, 1/2 glass crushed ice.',
     ingredient: 'Vodka, Gin, Lime juice cordial, Ice',
@@ -944,7 +927,7 @@ const drinksData = [
   },
   {
     drink_name: 'Atlantic Sun',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Shake all the ingredients, top the drink with soda. Garnish with a slice of orange. Use 20 ml Vodka, 20 ml Southern Comfort, 20 ml Passion fruit syrup, 60 ml Sweet and sour, a dash of Club soda.',
     ingredient:
@@ -955,7 +938,7 @@ const drinksData = [
   },
   {
     drink_name: 'Atomic Lokade',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'In a shaker, place lemonade, vodka, blue Curacao, and triple sec together. Shake with ice and strain into glass. Add sugar to taste. Use 5 oz Lemonade, 1 oz Vodka, 1/2 oz Blue Curacao, 1/2 oz Triple sec, sugar to taste, fill with ice.',
     ingredient: 'Lemonade, Vodka, Blue Curacao, Triple sec, Sugar, Ice',
@@ -965,7 +948,7 @@ const drinksData = [
   },
   {
     drink_name: 'Autodafé',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Mix and fill up with soda water. Drunk by finns on a sunny day any time of the year and day. Use 40ml Vodka, 1 dash Lime juice, fill with Soda water.',
     ingredient: 'Vodka, Lime juice, Soda water',
@@ -975,7 +958,7 @@ const drinksData = [
   },
   {
     drink_name: 'Avalon',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Fill a tall glass with ice. Layer the Finlandia Vodka, lemon and apple juices, Pisang Ambon, and top up with lemonade. Stir slightly and garnish with a spiralled cucumber skin and a red cherry. The cucumber provides zest and looks attractive. This drink, created by Timo Haimi, took first prize in the 1991 Finlandia Vodka Long Drink Competition. Use 3 parts Vodka, 1 part Pisang Ambon, 6 parts Apple juice, 1.5 part lemon juice and top with lemonade.',
     ingredient: 'Vodka, Pisang Ambon, Apple juice, Lemon juice, Lemonade',
@@ -985,7 +968,7 @@ const drinksData = [
   },
   {
     drink_name: 'Black Russian',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently. Use 3/4 oz Coffee Liqueur, 1.5 oz Vodka.',
     ingredient: 'Coffee Liqueur, Vodka',
@@ -995,7 +978,7 @@ const drinksData = [
   },
   {
     drink_name: 'Bloody Mary',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Stirring gently, pour all ingredients into highball glass. Garnish. Use 1.5 oz Vodka, 3 oz Tomato juice, 1 dash Lemon juice, 1/2 tsp Worcestershire sauce, 2-3 drops Tabasco sauce, 1 Lime wedge. Add other ingredients as desired; cheese, smoked meat, pickles, celery, celery salt are all popular choices.',
     ingredient:
@@ -1006,7 +989,7 @@ const drinksData = [
   },
   {
     drink_name: 'Bloody Punch',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Step 1 - Place the thawed strawberries in a large bowl. Mash them with a fork to ensure no large chunks. Step 2 - In a punch bowl or pitcher, combine mashed strawberries, lime pulp and soda. Mix well. Step 3 - Add blueberries and raisins. They will float and look like bugs in the punch. Use 10 shots Vodka, 3 cups Strawberries, 1/2 cup Lime juice, 12 oz Lemon-lime soda, 1 cup raisins, 1 cups blueberries.',
     ingredient:
@@ -1017,7 +1000,7 @@ const drinksData = [
   },
   {
     drink_name: 'Blue Lagoon',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour vodka and curacao over ice in a highball glass. Fill with lemonade, top with the cherry, and serve. Use 1 oz Vodka, 1 oz Blue Curacao, Lemonade, Cherry.',
     ingredient: 'Vodka, Blue Curacao, Lemonadade, Cherry',
@@ -1027,7 +1010,7 @@ const drinksData = [
   },
   {
     drink_name: 'Brain Fart',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and sodas are very cold. Use 1/5 Everclear, 1/5 Vodka, 2 liters Mountain Dew, 2 liters Surge, 1 small bottle Lemon juice, 1 pint Rum.',
     ingredient: 'Everclear, Vodka, Mountain Dew, Surge, Lemon juice, Rum',
@@ -1037,7 +1020,7 @@ const drinksData = [
   },
   {
     drink_name: 'Bruised Heart',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass. Use 1/2 oz Vodka, 1/2 oz Shambord raspberry liqueur, 1/2 oz Peachtree Schnapps, 1/2 oz Cranberry juice.',
     ingredient:
@@ -1048,7 +1031,7 @@ const drinksData = [
   },
   {
     drink_name: 'Bubble Gum',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Layer in order into a shot glass. Use 1 part Vodka, 1 part Banana Liqueur, 1 part Orange juice, 1 part Peach Schnapps. ',
     ingredient: 'Vodka, Banana Liqueur, Orange juice, Peach Schnapps',
@@ -1058,7 +1041,7 @@ const drinksData = [
   },
   {
     drink_name: 'Caribbean Orange Liqueur',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pare very thinly the bright-colored rind from the oranges (no white). Blot the peel on paper towels to remove any excess oil. Put peel in a 4 cup screw-top jar. Add 2 cups vodka. Close jar. Store in a cool, dark place for 2 days or until the vodka has absorbed the flavor. Remove peel and add remaining vodka. Close jar and add remaining cup of vodka. Close the jar and store in a cool dark place at least 1 month to age.',
     ingredient: 'Orange, Vodka, Sugar',
@@ -1068,7 +1051,7 @@ const drinksData = [
   },
   {
     drink_name: 'Cosmopolitan Martini',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour all ingredients in mixing glass half filled with ice, shake and strain into chilled Martini glass. Use 1/2 oz Cointreau, 1 oz Vodka, juice of half a Lime, 1 splash Cranberry juice.',
     ingredient: 'Cointreau, Vodka, Lime, Cranberry juice',
@@ -1078,7 +1061,7 @@ const drinksData = [
   },
   {
     drink_name: 'Dirty Martini',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.\r\nRub the rim of a martini glass with the wedge of lemon.\r\nStrain the contents of the cocktail shaker into the glass and add the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive. Use 70 ml Vodka, 1 Tbsp Dry Vermouth, 1 Tbsp Olive Brine, 1 Lemon wedge, 1 Olive.',
     ingredient: 'Vodka, Dry Vermouth, Olive Brine, Lemon, Olive',
@@ -1088,7 +1071,7 @@ const drinksData = [
   },
   {
     drink_name: 'Espresso Martini',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass. Use 50 ml Vodka, 10 ml Kahlua, 1 dash sugar syrup.',
     ingredient: 'Vodka, Kahlua, Sugar syrup',
@@ -1098,7 +1081,7 @@ const drinksData = [
   },
   {
     drink_name: 'Figgy Thyme',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'In a loose bag, crush up some ice. Pour your precious ice into a collins glass. In a cocktail shaker, muddle the figs and thyme together. Add honey vodka, lemon juice, and a large ice cube. Shake until well chilled, and strain into glass. Add tonic water and finally 2 dashes of angostura bitters. Garnish with sliced figs and thyme. Use 2oz Vodka, 1 tsp Honey, 3 Figs, 1 sprig Thyme, 2 dashes Angostura Bitters, top with Tonic Water.',
     ingredient: 'Vodka, Honey, Figs, Thyme, Agostura Bitters, Tonic Water',
@@ -1108,7 +1091,7 @@ const drinksData = [
   },
   {
     drink_name: 'Flaming Dr. Pepper',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Add Amaretto, Bacardi, and vodka. Mix in the Dr. Pepper and beer. Use 1 oz Amaretto, 1 oz Vodka, 1 oz Bacardi 151 proof Rum, 1 oz Dr. Pepper, 1 oz beer.',
     ingredient: 'Amaretto, Vodka, Rum, Dr. Pepper, Beer',
@@ -1118,7 +1101,7 @@ const drinksData = [
   },
   {
     drink_name: 'Freddy Kruger',
-    drink_tyep: 'Vodka',
+    drink_type: 'Vodka',
     instruction:
       'Make it an ample size shot. Use 1/2 oz Jägermeister, 1/2 oz Sambuca, 1/2 oz Vodka.',
     ingredient: 'Jägermeister, Sambuca, Vodka',
