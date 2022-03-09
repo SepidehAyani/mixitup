@@ -1,12 +1,11 @@
 const router = require('express').Router();
 
-// define drink-routes, drink-type-routes, and user-routes for server.js
-const drinkRoutes = require('./drink-routes');
-const drinkTypeRoutes = require('./drink-type-routes');
-const userRoutes = require('./user-routes');
+const userRoutes = require('./api/user-routes');
+const homeRoutes = require('./home-routes');
+const drinkRoutes = require('./api/drink-routes');
 
-router.use('/drinks', drinkRoutes);
-router.use('/drinkTypes', drinkTypeRoutes);
-router.use('/users', userRoutes);
+router.use('/user', userRoutes);
+router.use('/drink', drinkRoutes);
+router.use('/', homeRoutes);
 
 module.exports = router;
