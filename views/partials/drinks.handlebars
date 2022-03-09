@@ -1,0 +1,25 @@
+<div class="drinks">
+
+  {{#each drinks}}
+  <section class="drinks">
+    <div class="meta">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+
+    <div class="drink-body">
+      <p class="drink-text">{{drink}}</p>
+            
+      {{#if (../sessionUser user_id)}}
+      {{!-- Buttons for Editing and Deleting Drinks  --}}
+      <a href="/drink/edit/{{id}}"><button class="edit-drink-btn" style="text-align:center;display:inline;position: relative; float: left; margin-top: -10px; padding: 3px;"><i class="fa-solid fa-delete-left"></i> Edit</button></a>
+      <button class="delete-drink-btn" style="text-align:center;display:inline;position: relative; float: right; margin-top: -10px; padding: 3px;" data-drinkId="{{id}}" ><i class="fa-solid fa-trash-can"></i> Delete</button>
+      {{/if}}
+    </div>
+
+    <br>
+
+  </section>
+  {{/each}}
+</div>
+
+<script src="/javascript/delete-drink.js"></script> 

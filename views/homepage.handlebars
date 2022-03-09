@@ -1,0 +1,9 @@
+{{! -- Display drinks on homepage in unordered list -- }}
+
+<ul class="drink-list">
+  {{#each drinks as |drink|}}
+  <li>
+    {{> drink-info drink }}
+  </li>
+  {{/each}}
+</ul>

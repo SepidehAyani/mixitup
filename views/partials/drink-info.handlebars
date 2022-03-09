@@ -1,0 +1,19 @@
+<article class="drink">
+  <div class="drink-name">
+
+    <h3>
+      <a href="/drink/{{id}}"{{drink-name}}>{{drink-name}}</a>
+    </h3>
+    
+    {{#unless homepage}}
+    {{!-- Display all posts on Homepage  --}}
+    <p class="drink-content">{{drink-content}}</p>
+    {{/unless}}
+
+  </div>
+  <div class="meta">
+    Created by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/drink/{{id}}">{{drinks.length}} {{format_plural "drink" drinks.length}}</a>
+  </div>
+</article>
