@@ -36,10 +36,13 @@
             </li>
             <li class='nav-item'>
               <a
-                class='nav-link' href='/save-to-favorites' id='SaveToFav' >Favorites</a>
+                class='nav-link' href='/save-to-favorites' id='SaveToFav'>Favorites</a>
             </li>
             <li class='nav-item' id='login'>
               <a class='nav-link' href='/login'>Login</a>
+            </li>
+              <li class='nav-item' id='registration'>
+              <a class='nav-link' href='/registration'>Register</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#' id='logout'>Logout</a>
@@ -55,6 +58,9 @@
       src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'
     ></script>
     {{#if logged_in}}
+      <script src='/js/add-drink.js'></script>
+      <script src='/js/edit-drink.js'></script>
+      {{!-- <script src='/js/save-to-favorites.js'></script> --}}
       <script src='/js/logout.js'></script>
     {{/if}}
 
