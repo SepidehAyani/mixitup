@@ -119,6 +119,7 @@ router.put('/:id', withAuth, (req, res) => {
 // Delete a drink
 router.delete('/:id', withAuth, (req, res) => {
   console.log('id', req.params.id);
+  if (req.session) {
   Drink.destroy({
     where: {
       id: req.params.id
@@ -135,6 +136,7 @@ router.delete('/:id', withAuth, (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+  }
 });
 
 module.exports = router;
