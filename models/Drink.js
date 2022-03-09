@@ -11,12 +11,12 @@ Drink.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        name: {
+        drink_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        type: {
-            type: DataTypes.BOOLEAN,
+        drink_type: {
+            type: DataTypes.STRING,
             allowNull: false,
         },
         ingredient: {
@@ -24,13 +24,13 @@ Drink.init(
             allowNull: false,
         },
         instruction: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
-        date: {
-            type: DataTypes.DATE,
+        // recently added, not sure if it is needed but wanted to try to see if that would resolve seeds issue.
+        image: {
+            type: DataTypes.BLOB,
             allowNull: false,
-            defaultValue: DataTypes.NOW,
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -38,7 +38,7 @@ Drink.init(
                 model: 'user',
                 key: 'id'
             },
-        },
+        }
     },
     {
         sequelize,
