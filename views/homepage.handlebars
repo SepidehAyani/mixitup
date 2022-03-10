@@ -1,9 +1,13 @@
-{{! -- Display drinks on homepage in unordered list -- }}
-
-<ul class="drink-list">
-  {{#each drinks as |drink|}}
-  <li>
-    {{> drink-info drink }}
-  </li>
-  {{/each}}
-</ul>
+<main>
+    <div class="p-3">
+        <h2 class="text-center text-dark">Featured Drinks</h2>
+        <div class="container animate__animated animate__fadeInUp">
+            <ol class="container ">
+                {{#each drinks as |drink|}}
+                {{>catalog-cards}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    </div>
+</main>

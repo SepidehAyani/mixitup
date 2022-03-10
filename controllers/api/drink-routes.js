@@ -1,39 +1,41 @@
 const router = require('express').Router();
-const { Drink, User, Type } = require('../../models');
+const { User, Drink, Comment, Vote } = require('../../models');
+const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
 
 // Get all drinks
 router.get('/', (req, res) => {
-  console.log('==========Get All Drinks ============');
   Drink.findAll({
     attributes: [
       'id',
-      'drink_name',
-      'drink_type',
-      'ingredient',
+      'name',
       'instruction',
-      'user_id'
+      'ingredient',
+      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink_id)'), 'vote_count']
     ],
     include: [
       {
-        model: Type,
-        attributes: ['type_id', 'type_name'],
+        model: Comment,
+        attributes: ['id', 'comment_text', 'drink_id', 'user_id', 'created_at'],
+        include: {
+          model: User,
+          attributes: ['username']
+        }
       },
       {
         model: User,
-        attributes: ['id', 'username', 'email', 'pw']
-      }
+        attributes: ['username']
+      },
     ]
   })
-    .then(drinksData => res.json(drinksData))
+    .then(dbDrinkData => res.json(dbDrinkData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
 
-
-// Get drink by drink id
+// Get drink by ID
 router.get('/:id', (req, res) => {
   Drink.findOne({
     where: {
@@ -41,29 +43,33 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'drink_name',
-      'drink_type',
-      'ingredient',
+      'name',
       'instruction',
-      'user_id'
+      'ingredient',
+      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink_id)'), 'vote_count']
     ],
     include: [
       {
-        model: Type,
-        attributes: ['type_id', 'type_name'],
+        model: User,
+        attributes: ['username']
       },
       {
-        model: User,
-        attributes: ['id', 'username', 'email', 'pw']
+        model: Comment,
+        attributes: ['id', 'comment_text', 'drink_id', 'user_id', 'created_at'],
+        include: {
+          model: User,
+          attributes: ['username']
+        }
       }
     ]
+
   })
-    .then(drinksData => {
-      if (!drinksData) {
+    .then(dbDrinkData => {
+      if (!dbDrinkData) {
         res.status(404).json({ message: 'No drink found with this id' });
         return;
       }
-      res.json(drinksData);
+      res.json(dbDrinkData);
     })
     .catch(err => {
       console.log(err);
@@ -71,75 +77,50 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// Create a new drink
+// Post Drink
 router.post('/', withAuth, (req, res) => {
-  // expects {drink_name: '', drink_type: '', ingredient: '', instruction: '', user_id: ''}
   Drink.create({
-    drink_name: req.body.drink_name,
-    drink_type: req.body.drink_type,
-    ingredient: req.body.ingredient,
+    name: req.body.name,
     instruction: req.body.instruction,
-    image: req.body.image,
-    user_id: req.session.user_id
-  })
-    .then(drinksData => res.json(drinksData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
-// Edit a drink
-router.put('/:id', withAuth, (req, res) => {
-  Drink.update(
-    {
-      drink_name: req.body.drink_name,
-      drink_type: req.body.drink_type,
-      ingredient: req.body.ingredient,
-      instruction: req.body.instruction,
-      image: req.body.image,
-      user_id
-    },
-    {
-      where: {
-        id: req.params.id
-      }
-    }
-  )
-    .then(drinksData => {
-      if (!drinksData) {
-        res.status(404).json({ message: 'No drink found with this id' });
-        return;
-      }
-      res.json(drinksData);
+    ingredient: req.body.ingredient
     })
+    .then(dbDrinkData => res.json(dbDrinkData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
 
-// Delete a drink
-router.delete('/:id', withAuth, (req, res) => {
-  console.log('id', req.params.id);
+//Drink voting route
+router.put('/upvote', withAuth, (req, res) => {
   if (req.session) {
+    Drink.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
+      .then(updatedVoteData => res.json(updatedVoteData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  }
+});
+
+// Delete Drinks
+router.delete('/:id', withAuth, (req, res) => {
   Drink.destroy({
     where: {
       id: req.params.id
     }
   })
-    .then(drinksData => {
-      if (!drinksData) {
+    .then(dbDrinkData => {
+      if (!dbDrinkData) {
         res.status(404).json({ message: 'No drink found with this id' });
         return;
       }
-      res.json(drinksData);
+      res.json(dbDrinkData);
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
-  }
 });
 
 module.exports = router;

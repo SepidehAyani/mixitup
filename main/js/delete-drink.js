@@ -1,28 +1,26 @@
-// not needed, extra for future development
+async function deleteFormHandler(event) {
+  event.preventDefault();
 
-async function deleteDrinkHandler(event) {
-    // Prevents page from automatically re-loading.
-    event.preventDefault();
+  const id = window.location.toString().split('/')[
+    window.location.toString().split('/').length - 1
+  ];
 
-    // Identify the id for the particular drink
-    const drinkId = event.target.dataset.drinkId;
-
-    // Delete the appropriate drink per identified id
-    const response = await fetch(`/api/drinks/${drinkId}`, {
-      method: 'DELETE',
-    });
-
-    // Once drink is deleted, return the user to the homepage.
-    if (response.ok) {
-      document.location.replace('/');
-
-      // otherwise alert error
-    } else {
-      alert(response.statusText);
+  const response = await fetch(`/api/drink/${id}`, {
+    method: 'DELETE',
+    body: JSON.stringify({
+      drink_id: id
+    }),
+    headers: {
+      'Content-Type': 'application/json'
     }
+  });
+
+  if (response.ok) {
+    document.location.replace('/catalog/');
+  } else {
+    alert(response.statusText);
   }
 
-  // Use delete button on drink to delete the particular drink on click
-  document
-    .querySelector('.delete-drink-btn')
-    .addEventListener('click', deleteDrinkHandler);
+}
+
+document.querySelector('#delete-drink-btn').addEventListener('click', deleteFormHandler);

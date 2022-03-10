@@ -1,141 +1,25 @@
-body {
-  background-color: rgb(202, 202, 202);
+header {
+  text-align: center;
 }
 
-nav {
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  font-size: 45px;
-  color: white;
-  background-image: url("../assets/images/navbar.jpeg");
-  opacity: 75%;
+main {
+  padding: 0 0 15px 0;
+}
+
+.comment-body {
+  height: 120px;
+  width: 590px;
+}
+
+#drink-pic {
+  width: 200px;
+  height: 300px;
+}
+.inv-head {
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-/* Home view Styles */
-#blogposts {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.postItem {
-  margin: 10px 0 5px 35px;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
-}
-
-.nav-drink-type {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-link{
-  margin-top: 80px;
-  color: black;
-}
-
-.drinkBtn {
-  font-weight: bold;
-}
-
-#favorite-drinks{
-  margin-top: 120px;
-}
-
-#centered-form{
-  margin-top: 120px;
-}
-
-#loginForm{
-  margin-top: 120px;
-}
-
-#DrinkByType{
-  margin-top: 25px;
-}
-
-
-/* Individual blog post styles */
-#authorName, #datePosted {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#singlePost {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-#comments p{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(133, 163, 147);
-  border-radius: 10px;
-  padding: 5px;
-}
-
-#postID {
-  visibility: hidden;
-}
-
-/* Form styles */
-#loginForm, 
-#registrationForm, 
-#newPostForm,
-#editPostForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#holder {
-  margin: 10px;
-  width: 50%;
-}
-
-/* Login view styles */
-#register:hover {
-  opacity: 0.5;
-}
-
-/* Registration form styles */
-.form-item {
-  margin-bottom: 10px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 1000px) {
-  nav {
-      height: 225px;
-      font-size: 20px;
-  }
-}
-
-.row {
-  justify-content: center;
 }

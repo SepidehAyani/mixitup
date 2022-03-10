@@ -1,52 +1,64 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const { truncate } = require('./User');
 
-class Drink extends Model { }
+// Post model
+class Drink extends Model {
+  static upvote(body, models) {
+    return models.Vote.create({
+      user_id: body.user_id,
+      drink_id: body.drink_id
+    }).then(() => {
+      return Drink.findOne({
+        where: {
+          id: body.drink_id
+        },
+        attributes: [
+          'id',
+          'name',
+          'instruction',
+          'ingredient',
+          [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink_id)'), 'vote_count']
+        ]
+      });
+    });
+  }
+}
 
 Drink.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        drink_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        drink_type: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        ingredient: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        instruction: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-        },
-        // recently added, not sure if it is needed but wanted to try to see if that would resolve seeds issue.
-        image: {
-            type: DataTypes.BLOB,
-            allowNull: false,
-        },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id'
-            },
-        }
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
-    {
-        sequelize,
-        timestamps: false,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'drink',
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    instruction: {
+      type: DataTypes.TEXT,
+      allowNull: truncate
+    },
+    ingredient: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
     }
+  },
+  {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'drink'
+  }
 );
 
 module.exports = Drink;

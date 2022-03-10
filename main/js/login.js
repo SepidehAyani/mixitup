@@ -8,7 +8,7 @@ async function loginFormHandler(event) {
     const response = await fetch('/api/users/login', {
       method: 'post',
       body: JSON.stringify({
-        email,
+        username,
         password
       }),
       headers: { 'Content-Type': 'application/json' }
@@ -16,11 +16,10 @@ async function loginFormHandler(event) {
 
     if (response.ok) {
       document.location.replace('/');
-      alert('Login Successful!');
     } else {
-      alert('Please enter a valid username and password');
+      alert(response.statusText);
     }
   }
-};
+}
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);

@@ -1,72 +1,99 @@
 const router = require('express').Router();
-const { User, Drink } = require('../models');
+const sequelize = require('../config/connection');
+const { Drink, User, Vote, Comment } = require('../models');
 
-// Renders homepage
-router.get('/', async (req, res) => {
-  try {
-    const drinksData = await Drink.findAll({
-      include: [{ model: User }],
-    });
-    const drinkEntry = drinksData.map((post) => post.get({ plain: true }));
-    res.render('homepage', { de: drinkEntry });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// Get all drinks render homepage
+router.get('/', (req, res) => {
+    Drink.findAll({
+      attributes: [
+        'id',
+        'name',
+        'instruction',
+        'ingredient',
+        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink_id)'), 'vote_count']
+      ],
+      include: [
+        {
+          model: Comment,
+          attributes: ['id', 'comment_text', 'drink_id', 'user_id', 'created_at'],
+          include: {
+            model: User,
+            attributes: ['username']
+          }
+        },
+        {
+          model: User,
+          attributes: ['username']
+        }
+      ]
+    })
+      .then(dbDrinkData => {
+        const drinks = dbDrinkData.map(drink => drink.get({ plain: true }));
+        res.render('homepage', {
+          drinks,
+            loggedIn: req.session.loggedIn
+          });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
 
-// Render Login Page
+// Login
 router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+    res.render('login');
+  });
 
-  res.render('login');
+// Get drink by ID
+router.get('/drink/:id', (req, res) => {
+    Drink.findOne({
+      where: {
+        id: req.params.id
+      },
+      attributes: [
+        'id',
+        'name',
+        'instruction',
+        'ingredient',
+        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink)'), 'vote_count']
+      ],
+      include: [
+        {
+          model: Comment,
+          attributes: ['id', 'comment_text', 'drink', 'user_id', 'created_at'],
+          include: {
+            model: User,
+            attributes: ['username']
+          }
+        },
+        {
+          model: User,
+          attributes: ['username']
+        }
+      ]
+    })
+      .then(dbDrinkData => {
+        if (!dbDrinkData) {
+          res.status(404).json({ message: 'No drink found with this id' });
+          return;
+        }
+
+        const drink = dbDrinkData.get({ plain: true });
+
+        res.render('single-drink', {
+            drink,
+            loggedIn: req.session.loggedIn
+          });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 });
-
-// Render registration page
-router.get('/register', async (req, res) => {
-  try {
-    res.render('register');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Render add-drink page
-router.get('/add-drink', async (req, res) => {
-  try {
-    res.render('add-drink');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Render edit-drink page
-router.get('/edit-drink', async (req, res) => {
-  try {
-    res.render('edit-drink');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Render favorite-drinks page
-router.get('/favorite-drinks', async (req, res) => {
-  try {
-    res.render('favorite-drinks');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Render brandy-drinks page
-// router.get('/brandy', async (req, res) => {
-//   try {
-//     res.render('brandy');
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 module.exports = router;

@@ -1,0 +1,134 @@
+<main class="">
+    <div class="container">
+        <div class="d-flex justify-content-around align-items-center p-3">
+            <h2 class="text-light">Catalog</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Add +
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add A Drink</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form class="new-drink">
+                                <div>
+                                    <label for="drink">Choose a drink from the list:</label>
+                                    <input list="drinks" name="drink" id="drink">
+                                    <datalist id="drinks">
+                                        <option value="Amaretto Shake">
+                                        <option value="Boston Sidecar">
+                                        <option value="Brandy Alexander">
+                                        <option value="Brandy Sour">
+                                        <option value="City Slicker">
+                                        <option value="Scooter">
+                                        <option value="Scotch Cobbler">
+                                        <option value="Sidecar Cocktail">
+                                        <option value="Sol Y Sombra">
+                                        <option value="Stinger">
+                                        <option value="69 Special">
+                                        <option value="A1">
+                                        <option value="Abbey Cocktail">
+                                        <option value="Abbey Martini">
+                                        <option value="Ace">
+                                        <option value="Alexander">
+                                        <option value="Archbishop">
+                                        <option value="Aviation">
+                                        <option value="Bluebird">
+                                        <option value="Bombay Cassis">
+                                        <option value="Boomerang">
+                                        <option value="Boxcar">
+                                        <option value="Bramble">
+                                        <option value="Casino">
+                                        <option value="Casino Royale">
+                                        <option value="Cherry Electric Lemonade">
+                                        <option value="Flying Dutchman">
+                                        <option value="Gimlet">
+                                        <option value="Gin Fizz">
+                                        <option value="Gin Lemon">
+                                        <option value="Gin Sling">
+                                        <option value="Afterglow">
+                                        <option value="Aloha Fruit punch">
+                                        <option value="Apple Berry Smoothie">
+                                        <option value="Banana Milk Shake">
+                                        <option value="Bora Bora">
+                                        <option value="Just a Moonmint">
+                                        <option value="Lassi Plain">
+                                        <option value="Lassi Mango">
+                                        <option value="Adam Bomb">
+                                        <option value="Adios Amigos Cocktail">
+                                        <option value="Aztec Punch">
+                                        <option value="Bahama Mama">
+                                        <option value="Barracuda">
+                                        <option value="Blue Hurricane">
+                                        <option value="Bounty Hunter">
+                                        <option value="Captain Kidds Punch">
+                                        <option value="Rum Punch">
+                                        <option value="Rum Toddy">
+                                        <option value="Highland Fling Cocktail">
+                                        <option value="Irish Cream">
+                                        <option value="Loch Lomond">
+                                        <option value="Rusty Nail">
+                                        <option value="Scotch Cobbler">
+                                        <option value="Scotch Sour">
+                                        <option value="Thriller">
+                                        <option value="Whisky Mac">
+                                        <option value="Bloody Maria">
+                                        <option value="Blue Margarita">
+                                        <option value="Brave Bull Shooter">
+                                        <option value="Cherry Electric Lemonade">
+                                        <option value="Downshift">
+                                        <option value="Long Island Iced Tea">
+                                        <option value="Margarita">
+                                    </datalist>
+                                </div>
+                                {{!-- <div>
+                                    <label for="type">Select type of the alcohol:</label>
+                                    <input list="types" name="type" id="sitypeze">
+                                    <datalist id="types">
+                                        <option value="Brandy">
+                                        <option value="Gin">
+                                        <option value="Rum">
+                                        <option value="Tequila">
+                                    </datalist>
+                                </div> --}}
+                                <div>
+                                    <label for="instruction">Please enter the recipe here</label>
+                                    <input type="text" id="instruction" />
+                                </div>
+                                <div>
+                                    <label for="ingredient">Please enter the ingredients</label>
+                                    <input type="text" id="ingredient" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ol class="container animate__animated animate__fadeInUp">
+                {{#if drinks.length}}
+                {{#each drinks as |drink|}}
+                {{>catalog-cards drink}}
+                {{/each}}
+            </ol>
+            {{else}}
+            <h6 class="text-center text-light font-italic m-3">Currently, you don't have any drinks. Please click add.</h6>
+            {{/if}}
+        </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"</script>
+</body>
+
+</html>
+
+<script src="/js/drink.js"></script>
