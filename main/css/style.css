@@ -9,6 +9,7 @@ nav {
   font-size: 45px;
   color: white;
   background-image: url("../assets/images/navbar.jpeg");
+  opacity: 75%;
 }
 
 a {
@@ -38,6 +39,10 @@ a {
   justify-content: space-around;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
 .nav-drink-type {
   display: flex;
   flex-direction: row;
@@ -46,8 +51,29 @@ a {
   justify-content: center;
 }
 
+.nav-link{
+  margin-top: 80px;
+  color: black;
+}
+
 .drinkBtn {
   font-weight: bold;
+}
+
+#favorite-drinks{
+  margin-top: 120px;
+}
+
+#centered-form{
+  margin-top: 120px;
+}
+
+#loginForm{
+  margin-top: 120px;
+}
+
+#DrinkByType{
+  margin-top: 25px;
 }
 
 
