@@ -1,6 +1,5 @@
-
 body {
-  background-color: rgb(155, 172, 163);
+  background-color: rgb(202, 202, 202);
 }
 
 nav {
@@ -15,22 +14,40 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  font-size: large;
-  position: relative;
-  align-items: baseline;
 }
 
 /* Home view Styles */
 #blogposts {
   width: 95%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .postItem {
   margin: 10px 0 5px 35px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-drink-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.drinkBtn {
+  font-weight: bold;
 }
 
 

@@ -587,7 +587,8 @@ const drinksData = [
   },
   {
     drink_name: 'Pineapple Paloma',
-    drink_type: 'Tequila', 'Rub the rim of each glass with lime slice and dip into salt. Add ice, tequila, grapefruit juice, lime juice and top with pineapple soda. Give it a quick stir. Garnish with fresh pineapple or lime. Use 4 oz Tequila, 4 oz Grapefruit Juice, 1 oz Fresh Lime Juice, 8 oz Pineapple Juice,  garnish with Lime.',
+    drink_type: 'Tequila',
+    instruction: 'Rub the rim of each glass with lime slice and dip into salt. Add ice, tequila, grapefruit juice, lime juice and top with pineapple soda. Give it a quick stir. Garnish with fresh pineapple or lime. Use 4 oz Tequila, 4 oz Grapefruit Juice, 1 oz Fresh Lime Juice, 8 oz Pineapple Juice,  garnish with Lime.',
     ingredient: 'Tequila, Grapefruit Juice, Fresh Lime Juice, Pineapple Juice, Lime',
     image: 'https://www.thecocktaildb.com/images/media/drink/pg8iw31593351601.jpg',
     user_id: 6,
