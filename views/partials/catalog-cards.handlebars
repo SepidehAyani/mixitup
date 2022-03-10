@@ -1,24 +1,14 @@
-<li class='row justify-content-center m-3'>
-    <div class='col-md-9'>
-        <div class='card shadow bg-white rounded'>
-            <div class='card-header'>
-                <div class='row'>
-                    <span class='col-4 font-weight-bold'><a href='/catalog/drink/{{id}}'><i
-                                class='fas fa-glass-drink'></i> {{name}}</a></span>
-                    <span class='col-4 font-italic'></span>
-                    <span class='col-4 text-right font-weight-bold'>{{vote_count}}
-                        {{format_plural 'vote' vote_count}}</span>
-                </div>
-            </div>
-            <div class='card-body row'>
-                <img id='drink-pic' class='rounded' src='/assets/images/{{name}}.jpg' alt='{{name}}'>
-                <div class='col-7'>
-                    <p>Instruction: {{instruction}}</p>
-                    <p>Ingredient: {{ingredient}}</p>
-                </div>
+<div class="container body-content">
+    <div class="body-content">
+        <div class='card-action center-align'>
+            <a href='/catalog/drink/{{id}}'><i class='fas fa-glass-drink'></i> {{name}}</a>
+        </div>
+        <div class='row'>
+            <div class='col s12 m6 l4'>
+                <img class='card medium' id='drink-pic' src='/assets/images/{{name}}.jpg' alt='{{name}}'>
             </div>
         </div>
     </div>
-</li>
+</div>
 
 <script src='/js/upvote.js'></script>

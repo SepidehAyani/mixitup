@@ -14,6 +14,7 @@ main {
 #drink-pic {
   width: 200px;
   height: 300px;
+  
 }
 .inv-head {
   font-weight: bold;
@@ -22,4 +23,18 @@ main {
 a {
   text-decoration: none;
   color: black;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.card .card-content .card-title {
+  margin-bottom: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-action a{
+  margin-right: 0px !important;
 }
