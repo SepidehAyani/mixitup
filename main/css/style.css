@@ -4,14 +4,20 @@ body {
 }
 
 nav {
-  height: 100px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
   font-size: 45px;
   color: white;
+  background-image: url("../assets/images/navbar.jpeg");
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-size: large;
+  position: relative;
+  align-items: baseline;
 }
 
 /* Home view Styles */

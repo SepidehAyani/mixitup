@@ -2,9 +2,9 @@ const router = require('express').Router();
 const { Drink, User, Type } = require('../../models');
 
 // Get all drinks by type: Brandy
-router.get('/', (req, res) => {
+router.get('/brandy', (req, res) => {
   console.log('======================');
-  Drink.findAll({
+  Drink.findOne({
     attributes: [
       'id',
       'drink_name',

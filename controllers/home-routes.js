@@ -60,4 +60,13 @@ router.get('/favorite-drinks', async (req, res) => {
   }
 });
 
+// Render brandy-drinks page
+// router.get('/brandy', async (req, res) => {
+//   try {
+//     res.render('brandy');
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
 module.exports = router;
