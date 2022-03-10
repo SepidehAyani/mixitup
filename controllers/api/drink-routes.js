@@ -79,6 +79,7 @@ router.post('/', withAuth, (req, res) => {
     drink_type: req.body.drink_type,
     ingredient: req.body.ingredient,
     instruction: req.body.instruction,
+    image: req.body.image,
     user_id: req.session.user_id
   })
     .then(drinksData => res.json(drinksData))
@@ -95,7 +96,9 @@ router.put('/:id', withAuth, (req, res) => {
       drink_name: req.body.drink_name,
       drink_type: req.body.drink_type,
       ingredient: req.body.ingredient,
-      instruction: req.body.instruction
+      instruction: req.body.instruction,
+      image: req.body.image,
+      user_id
     },
     {
       where: {

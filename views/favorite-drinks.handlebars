@@ -1,17 +1,15 @@
-{{!-- <div class="card" style="width: 18rem;">
-  <div class="card-header">
+<div class='card' style='width: 18rem;'>
+  <div class='card-header'>
     My Favorite Drinks
   </div>
 
   {{#if loggedIn}}
-  <ul class="list-group list-group-flush">
-      {{# each favorite drink.drink_name}}
-    <li class="list-group-item">{{drink.name}}</li>
-    <li class="list-group-item">{{drink.name}}</li>
-    <li class="list-group-item">{{drink.name}}</li>
-  </ul>
-  {{#if loggedIn}}
+    <ul class='list-group list-group-flush'>
+      {{!-- {{#each favorite drink.drink_name}} --}}
+      <li class='list-group-item'>{{drink.name}}</li>
+      <li class='list-group-item'>{{drink.name}}</li>
+      <li class='list-group-item'>{{drink.name}}</li>
+    </ul>
+  {{/if}}
 
-</div> --}}
-
-{{!-- <script src='/js/view-favorites.js'></script> --}}
+</div>
