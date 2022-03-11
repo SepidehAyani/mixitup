@@ -38,3 +38,12 @@ a {
 .card-action a{
   margin-right: 0px !important;
 }
+
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-content {
+  flex: 5;
+}
