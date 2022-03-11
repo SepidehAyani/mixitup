@@ -2,6 +2,14 @@ header {
   text-align: center;
 }
 
+.hero {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   padding: 0 0 15px 0;
 }
