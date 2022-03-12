@@ -3,7 +3,9 @@
         <div class="container animate__animated animate__fadeInUp">
             <ol class="container flex-cards">
                 {{#each drinks as |drink|}}
-                {{>catalog-cards}}
+                <button>
+                    {{>catalog-cards}}
+                </button>
                 {{/each}}
             </ol>
         </div>
