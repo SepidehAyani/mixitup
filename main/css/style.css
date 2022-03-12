@@ -101,9 +101,32 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.body-content {
+  flex: 5;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+footer a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+footer a:visited {
+  font-style: italic;
+  text-decoration: none;
 
 .col {
   padding: 0px, 0px, 0px, 0px;
   display: flex;
   justify-content: space-evenly;
+
 }
