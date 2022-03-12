@@ -1,7 +1,7 @@
 <main class="">
     <div class="container">
         <div class="d-flex justify-content-around align-items-center p-3">
-            <h2 class="text-light">Catalog</h2>
+            <h2 class="text-dark">My Favorite Drinks</h2>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Add +
             </button>
@@ -11,16 +11,15 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add A Drink</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Add to Favorite</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-
-                            <form class="new-drink">
+                            <form class="fav-drink">
                                 <div>
-                                    <label for="drink">Choose a drink from the list:</label>
+                                    <label for="drink">Pick your favorite here:</label>
                                     <input list="drinks" name="drink" id="drink">
                                     <datalist id="drinks">
                                         <option value="Amaretto Shake">
@@ -89,46 +88,44 @@
                                         <option value="Margarita">
                                     </datalist>
                                 </div>
-                                {{!-- <div>
-                                    <label for="type">Select type of the alcohol:</label>
-                                    <input list="types" name="type" id="sitypeze">
-                                    <datalist id="types">
-                                        <option value="Brandy">
-                                        <option value="Gin">
-                                        <option value="Rum">
-                                        <option value="Tequila">
-                                    </datalist>
-                                </div> --}}
                                 <div>
-                                    <label for="instruction">Please enter the recipe here</label>
+                                    <label for="instruction">Any changes in the recipe that you want to add
+                                        here?</label>
                                     <input type="text" id="instruction" />
                                 </div>
                                 <div>
-                                    <label for="ingredient">Please enter the ingredients</label>
+                                    <label for="ingredient">Please enter any additional ingredients that you are
+                                        using</label>
                                     <input type="text" id="ingredient" />
                                 </div>
-                            </form>
                         </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button submit" class="btn btn-primary" id="submit">Save changes</button>
+                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <ol class="container animate__animated animate__fadeInUp">
-                {{#if drinks.length}}
-                {{#each drinks as |drink|}}
-                {{>catalog-cards drink}}
-                {{/each}}
-            </ol>
-            {{else}}
-            <h6 class="text-center text-light font-italic m-3">Currently, you don't have any drinks. Please click add.</h6>
-            {{/if}}
         </div>
+        <!-- List -->
+        <ol class="container animate__animated animate__fadeInUp">
+            {{#if drinks.length}}
+            {{#each drinks as |favorite|}}
+            {{>catalog-cards favorite}}
+            {{/each}}
+        </ol>
+        {{else}}
+        <h6 class="text-center text-dark font-regular m-3">Currently you don't have any favorite drinks!</h6>
+        {{/if}}
+    </div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
 
-<script src="/js/drink.js"></script>
+<script src="/js/favorite.js"></script>
