@@ -20,6 +20,7 @@ h1, h3 {
 
 h1 {
   color: white;
+  margin-top: 50px;
 }
 
 header img {
@@ -40,8 +41,10 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/images/navbar.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  background-size: cover;
+  width: auto;
+  height: 250px;
 }
 
 
