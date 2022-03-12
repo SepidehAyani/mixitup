@@ -9,15 +9,21 @@
 
 header {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: space-between;
 }
 
-h1 {
+h1, h3 {
   font-family: Lobster;
 }
 
+h1 {
+  color: white;
+}
+
 header img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   width: 75px;
   height: 54px;
 }
@@ -44,8 +50,8 @@ main {
 }
 
 .comment-body {
-  height: 120px;
-  width: 590px;
+  height: 20vh;
+  width: 40vw;
 }
 
 #drink-pic {
@@ -95,4 +101,6 @@ a {
 
 .col {
   padding: 0px, 0px, 0px, 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
