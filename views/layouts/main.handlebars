@@ -5,34 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <title>Mix It Up</title>
 </head>
 
 <body>
   <!-- Header -->
-  <header>
-    <h1 align="center"><i class="fas fa-glass-drink"></i>Mix It Up</h1>
+
+
+  <!-- Hero -->
+  <div class="hero">
+      <header>
+    <h1 align="center"><i class="fas fa-glass-drink"></i>
+      <img src="/assets/svg/glass-cheers-solid.svg">
+      Mix It Up    
+    </h1>
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav m-auto">
-          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/"><button>Home</button></a>
           {{#if loggedIn}}
-          <a class="nav-item nav-link" href="/catalog">Catalog</a>
-          <a id="logout" class="nav-item nav-link">Logout</a>
+          <a class="nav-item nav-link" href="/catalog"><button>My Favorite Drinks</button></a>
+          <a id="logout" class="nav-item nav-link"><button>Logout</button></a>
           {{else}}
-          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/login"><button>Login</button></a>
           {{/if}}
         </div>
       </div>
     </nav>
   </header>
-
-  <!-- Hero -->
-  <div class="hero">
-    <img src="/assets/images/navbar.jpeg" class="img-fluid max-width: 100vw height: 50vh" alt="">
+    <img src="/assets/images/navbar.jpeg" alt="Banner img" style="opacity: 0;">
   </div>
 
   <!-- Main -->

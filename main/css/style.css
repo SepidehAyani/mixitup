@@ -1,31 +1,78 @@
-header {
+* {
   text-align: center;
 }
 
-.hero {
-  width: 100vw;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: "Lobster";
+  src: url("../assets/fonts/Lobster-Regular.ttf")
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+h1, h3 {
+  font-family: Lobster;
+}
+
+h1 {
+  color: white;
+  margin-top: 50px;
+}
+
+header img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  width: 75px;
+  height: 54px;
+}
+
+button:hover {
+  color:rgb(51, 51, 51);
+}
+
+button {
+  border-radius: 12px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/images/navbar.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: auto;
+  height: 250px;
+}
+
 
 main {
   padding: 0 0 15px 0;
 }
 
 .comment-body {
-  height: 120px;
-  width: 590px;
+  height: 20vh;
+  width: 40vw;
 }
 
 #drink-pic {
   width: 200px;
-  height: 300px;
-  
+  height: 200px;
 }
+
+.drink-pic {
+  width: 200px;
+  height: 200px;
+}
+
 .inv-head {
   font-weight: bold;
+}
+
+.body-content {
+  flex: 5;
 }
 
 a {
@@ -38,20 +85,22 @@ a {
   background-position: center;
   border-radius: 5px;
 }
+
 .card .card-content .card-title {
   margin-bottom: 6vh;
   margin-left: auto;
   margin-right: auto;
 }
 .card-action a{
+  text-align: center;
   margin-right: 0px !important;
 }
 
 .flex-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 .body-content {
   flex: 5;
 }
@@ -74,4 +123,10 @@ footer a:hover {
 footer a:visited {
   font-style: italic;
   text-decoration: none;
+
+.col {
+  padding: 0px, 0px, 0px, 0px;
+  display: flex;
+  justify-content: space-evenly;
+
 }
