@@ -105,6 +105,12 @@ a {
   flex: 5;
 }
 
+.col {
+  padding: 0px, 0px, 0px, 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 footer {
   text-align: center;
 }
@@ -123,10 +129,4 @@ footer a:hover {
 footer a:visited {
   font-style: italic;
   text-decoration: none;
-
-.col {
-  padding: 0px, 0px, 0px, 0px;
-  display: flex;
-  justify-content: space-evenly;
-
 }
