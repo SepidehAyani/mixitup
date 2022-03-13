@@ -4,7 +4,9 @@ const drinkData = [
   {
     name: 'Amaretto Shake',
     type: 'Brandy',
-    created_at: new Date()
+    created_at: new Date(),
+    instruction: 'Combine all ingredients in a blender and blend at high speed until smooth. Serve in chilled glass garnished with bittersweet chocolate shavings. Use two scoops of Chocolate ice-cream, 2 oz of Brandy, and 2 oz Amaretto.',
+    ingredient: 'Chocolate ice-cream, Brandy, Amaretto'
   },
   {
     name: 'Boston Sidecar',

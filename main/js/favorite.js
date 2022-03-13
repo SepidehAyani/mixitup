@@ -6,7 +6,7 @@ async function favHandler(event) {
     const ingredient = document.querySelector('#ingredient').value.trim();
     
     const response = await fetch('/api/drink', {
-      method: 'PUT',
+      method: 'POST',
       body: JSON.stringify({
         name,
         instruction,

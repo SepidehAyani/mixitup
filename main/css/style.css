@@ -1,10 +1,7 @@
-* {
-  text-align: center;
-}
 
 @font-face {
-  font-family: "Lobster";
-  src: url("../assets/fonts/Lobster-Regular.ttf")
+  font-family: 'Lobster';
+  src: url('../assets/fonts/Lobster-Regular.ttf');
 }
 
 header {
@@ -14,7 +11,8 @@ header {
   justify-content: space-between;
 }
 
-h1, h3 {
+h1,
+h3 {
   font-family: Lobster;
 }
 
@@ -24,13 +22,14 @@ h1 {
 }
 
 header img {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
   width: 75px;
   height: 54px;
 }
 
 button:hover {
-  color:rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
 }
 
 button {
@@ -38,7 +37,8 @@ button {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/images/navbar.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('../assets/images/navbar.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -85,8 +85,8 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.card-action a{
-  text-align: center;
+.card-action {
+  text-align: center !important;
   margin-right: 0px !important;
 }
 

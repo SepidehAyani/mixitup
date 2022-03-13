@@ -19,7 +19,7 @@
                         <div class="modal-body">
                             <form class="fav-drink">
                                 <div>
-                                    <label for="drink">Pick your favorite here:</label>
+                                    <label for="drink">Pick your favorite:</label>
                                     <input list="drinks" name="drink" id="drink">
                                     <datalist id="drinks">
                                         <option value="Amaretto Shake">
@@ -89,13 +89,11 @@
                                     </datalist>
                                 </div>
                                 <div>
-                                    <label for="instruction">Any changes in the recipe that you want to add
-                                        here?</label>
+                                    <label for="instruction">Any changes in the recipe you want to add?</label>
                                     <input type="text" id="instruction" />
                                 </div>
                                 <div>
-                                    <label for="ingredient">Please enter any additional ingredients that you are
-                                        using</label>
+                                    <label for="ingredient">Please enter any additional ingredients you used.</label>
                                     <input type="text" id="ingredient" />
                                 </div>
                         </div>
@@ -111,8 +109,8 @@
         <!-- List -->
         <ol class="container animate__animated animate__fadeInUp">
             {{#if drinks.length}}
-            {{#each drinks as |favorite|}}
-            {{>catalog-cards favorite}}
+            {{#each drinks as |drink|}}
+            {{>catalog-cards drink}}
             {{/each}}
         </ol>
         {{else}}
@@ -128,4 +126,4 @@
 
 </html>
 
-<script src="/js/favorite.js"></script>
+<script src="/js/drink.js"></script>
