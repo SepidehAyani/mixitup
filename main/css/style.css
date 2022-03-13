@@ -47,7 +47,6 @@ button {
   height: 250px;
 }
 
-
 main {
   padding: 0 0 15px 0;
 }
@@ -58,11 +57,6 @@ main {
 }
 
 #drink-pic {
-  width: 200px;
-  height: 200px;
-}
-
-.drink-pic {
   width: 200px;
   height: 200px;
 }
@@ -124,6 +118,7 @@ footer a:visited {
   font-style: italic;
   text-decoration: none;
 }
+
 .col {
   padding: 0px, 0px, 0px, 0px;
   display: flex;
