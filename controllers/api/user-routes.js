@@ -33,13 +33,14 @@ router.get('/:id', (req, res) => {
           model: Drink,
           attributes: ['name']
         }
-      },
-      {
-        model: Drink,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_drink'
       }
+      // //,
+      // {
+      //   model: Drink,
+      //   attributes: ['title'],
+      //   through: Vote,
+      //   as: 'voted_drink'
+      // }
     ]
 
   })
@@ -131,24 +132,24 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
-// Delete users
-router.delete('/:id', withAuth, (req, res) => {
-  User.destroy({
-    where: {
-      id: req.params.id
-    }
-  })
-    .then(dbUserData => {
-      if (!dbUserData) {
-        res.status(404).json({ message: 'No user found with this id' });
-        return;
-      }
-      res.json(dbUserData);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+// // Delete users
+// router.delete('/:id', withAuth, (req, res) => {
+//   User.destroy({
+//     where: {
+//       id: req.params.id
+//     }
+//   })
+//     .then(dbUserData => {
+//       if (!dbUserData) {
+//         res.status(404).json({ message: 'No user found with this id' });
+//         return;
+//       }
+//       res.json(dbUserData);
+//     })
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
 module.exports = router;
