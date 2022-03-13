@@ -2,7 +2,7 @@ var rating = null;
 
 // use raty for creating a user/drink rating, displaying 1-5 hearts (i.e. stars)
 $('#star-rating').raty({
-  path: '../assets/images',
+  path: '/assets/images/',
   click: (score) => {
     rating = score;
   },

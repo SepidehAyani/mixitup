@@ -4,43 +4,42 @@
   </div>
 </div>
 
-  {{#if loggedIn}}
-    <div class="">
-      <div class="row justify-content-center">
-        <div class="card col-md-6">
-          <form class="comment-form">
-            <div class="m-3">
-              <textarea class="comment-body" name="comment-body"></textarea>
-              <button type="submit" class="btn-primary rounded m-3">Add Comment</button>
-            </div>
-            <div class="row justify-content-center">
-              <div id="star-rating" style="cursor: pointer;">
-                <input name="score" type="hidden" value="5">
-              </div>
-              <button type="submit" class="btn-primary rounded m-3">Submit</button>
-
-              
-            </div>
-          </form>
+{{#if loggedIn}}
+<div class="">
+  <div class="row justify-content-center">
+    <div class="card col-md-6">
+      <form class="comment-form">
+        <div class="m-3">
+          <textarea class="comment-body" name="comment-body"></textarea>
+          <button type="submit" class="btn-primary rounded m-3">Add Comment</button>
         </div>
-      </div>
+        <div class="row justify-content-center">
+          <div id="star-rating" style="cursor: pointer;">
+            <input name="score" type="hidden" value="5">
+            <button type="submit" class="btn-primary rounded m-3">Submit</button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
-    <div class="row justify-content-center">
-      <div class="card col-md-6 m-3">
+<div class="row justify-content-center">
+  <div class="card col-md-6 m-3">
 
-        {{> comments drink.comments}}
+    {{> comments drink.comments}}
 
-      {{! JQuery script}}
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-      {{! To run Raty.js -- JQuery add-on }}
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/raty/3.1.1/jquery.raty.min.js'></script>
-        <script src="/js/comment.js"></script>
-        <script src="/js/rating.js"></script>
-        {{!-- <script src="/js/upvote.js"></script> --}}
-        {{!-- <script src="/js/delete-drink.js"></script> --}}
-      </div>
-    </div>
-  
-  {{/if}}
+    {{! JQuery script}}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    {{! To run Raty.js -- JQuery add-on }}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/raty/3.1.1/jquery.raty.min.js'></script>
+    <script src="/js/comment.js"></script>
+    <script src="/js/rating.js"></script>
+    {{!--
+    <script src="/js/upvote.js"></script> --}}
+    {{!--
+    <script src="/js/delete-drink.js"></script> --}}
+  </div>
+</div>
 
+{{/if}}

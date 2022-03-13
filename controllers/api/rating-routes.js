@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User, Drink } = require('../../models');
+const { User, Drink } = require('../../models');
 
 // find all ratings
 router.get("/", (req, res) => {
@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 			},
 			{
 				model: Drink,
-				attributes: ['id', 'name', 'instruction', 'ingredeient', 'user_id'],
+				attributes: ['id', 'name', 'instruction', 'ingredient', 'user_id'],
 				include: {
 					model: User,
 					attributes: ['username', 'id']
@@ -40,7 +40,7 @@ router.get("/:id", (req, res) => {
 			},
 			{
 				model: Drink,
-				attributes: ['id', 'name', 'instruction', 'ingredeient', 'user_id'],
+				attributes: ['id', 'name', 'instruction', 'ingredient', 'user_id'],
 				include: {
 					model: User,
 					attributes: ['username', 'id']
