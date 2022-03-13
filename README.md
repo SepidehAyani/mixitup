@@ -3,7 +3,7 @@ This is a mobile friendly app which allows user to make new beverages based on s
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/SepidehAyani/mixitup)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SepidehAyani/mixitup)  ![GitHub watchers](https://img.shields.io/github/watchers/SepidehAyani/mixitup?label=Watch&style=social)  ![GitHub top language](https://img.shields.io/github/languages/top/SepidehAyani/mixitup)  ![GitHub license](https://img.shields.io/badge/license-MIT-blueyellow) <br> 
 ## User Story 
-The user wants to be able to make drinks based on the ingredients, so using this app will help them to access the available dirctory, add new drinks with a photo and delete or update an exisiting drink.
+The user can access a list of alcoholic and non-alcoholic drinks, with their name, pictures, instruction of how to make them and the used ingredients. The user also can choose a favorite drink and add it to their My Favorite Drinks list after they are logged in.
 
 ## Table of Contents 
 1. [About the Project](#About-The-Project)
@@ -24,7 +24,7 @@ The user wants to be able to make drinks based on the ingredients, so using this
 - When user revisits the site at a later time and choose to sign in, they are prompted to enter my username and password.
 - When user is signed in to the site, they can see navigation links for the homepage, the dashboard, and the option to log out.
 - When user clicks on the homepage option in the navigation, they are taken to the homepage and presented with existing drinks that include the name of the drink,  and photo of the drink.
-- When user clicks on an existing drink, they are presented with the drink name, photo of a drink, and date created for that drink and have the option to leave a comment.
+- When user clicks on an existing drink, they are presented with the drink name, instruction, ingredients and photo of a drink, and date created for that drink and have the option to leave a comment.
 - When user enters a comment and clicks on the submit button while signed in, the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created.
 - When user clicks on the dashboard option in the navigation, they are taken to the dashboard and presented with any drinks that have already created and the option to add a new drink.
 - When user clicks on the rating stars, they are able to give a rating to a drink.
@@ -66,7 +66,7 @@ DB_PW='xxx'
 ## Usage
 Mix-It-Up allows users to:
 - sign-up, login, and logout.
-- see a list of available drinks.
+- see a list of available drinks with their names, instructions and ingredients.
 - see a list of favorite drinks and add to the list.
 
 ## Questions
