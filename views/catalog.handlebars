@@ -88,14 +88,6 @@
                                         <option value="Margarita">
                                     </datalist>
                                 </div>
-                                <div>
-                                    <label for="instruction">Any changes in the recipe you want to add?</label>
-                                    <input type="text" id="instruction" />
-                                </div>
-                                <div>
-                                    <label for="ingredient">Please enter any additional ingredients you used.</label>
-                                    <input type="text" id="ingredient" />
-                                </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -106,16 +98,6 @@
                 </div>
             </div>
         </div>
-        <!-- List -->
-        <ol class="container animate__animated animate__fadeInUp">
-            {{#if drinks.length}}
-            {{#each drinks as |drink|}}
-            {{>catalog-cards drink}}
-            {{/each}}
-        </ol>
-        {{else}}
-        <h6 class="text-center text-dark font-regular m-3">Currently you don't have any favorite drinks!</h6>
-        {{/if}}
     </div>
 </main>
 
@@ -126,4 +108,4 @@
 
 </html>
 
-<script src="/js/drink.js"></script>
+<script src="/js/favorite.js"></script>
