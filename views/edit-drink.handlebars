@@ -1,0 +1,35 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Drink
+  </h2>
+  <form class="edit-drink-form">
+    <div>
+      <input name="drink-title" type="text" value="{{drink.title}}" />
+      <span>({{format_url drink.drink_url}})</span>
+    </div>
+    <div>
+      {{drink.vote_count}} {{format_plural "point" drink.vote_count}} by you on {{format_date drink.created_at}}
+      |
+      <a href="/drink/{{drink.id}}">{{drink.comments.length}} {{format_plural "comment" drink.comments.length}}</a>
+    </div>
+    <button type="submit">Save drink</button>
+    <button type="button" class="delete-drink-btn">Delete drink</button>
+  </form>
+</article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+{{> comments drink.comments}}
+
+<script src="/js/edit-drink.js"></script>
+<script src="/js/delete-drink.js"></script>
+<script src="/js/comment.js"></script>

@@ -60,7 +60,7 @@ router.get('/drink/:id', (req, res) => {
         'name',
         'instruction',
         'ingredient',
-        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink)'), 'vote_count']
+        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE drink.id = vote.drink_id)'), 'vote_count']
       ],
       include: [
         {

@@ -83,7 +83,7 @@ router.post('/', withAuth, (req, res) => {
     name: req.body.name,
     instruction: req.body.instruction,
     ingredient: req.body.ingredient
-    })
+  })
     .then(dbDrinkData => res.json(dbDrinkData))
     .catch(err => {
       console.log(err);
@@ -101,6 +101,27 @@ router.put('/upvote', withAuth, (req, res) => {
         res.status(500).json(err);
       });
   }
+});
+
+//Update drinks
+router.put('/:id', withAuth, (req, res) => {
+  Drink.update(req.body, {
+    individualHooks: true,
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbDrinkData => {
+      if (!dbDrinkData[0]) {
+        res.status(404).json({ message: 'No drink found with this id' });
+        return;
+      }
+      res.json(dbDrinkData);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // Delete Drinks
