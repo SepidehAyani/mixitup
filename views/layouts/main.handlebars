@@ -1,51 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <title>Mix It Up</title>
-</head>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link
+      rel='stylesheet'
+      href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+    />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'
+    />
+    <link
+      rel='stylesheet'
+      href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css'
+    />
+    <!-- for Raty -->
+    <link rel="stylesheet" href="jquery.raty.css">
+    <title>Mix It Up</title>
+  </head>
 
-<body>
-  <!-- Header -->
-  <header>
-    <h1 align="center"><i class="fas fa-glass-drink"></i>Mix It Up</h1>
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav m-auto">
-          <a class="nav-item nav-link" href="/">Home</a>
-          {{#if loggedIn}}
-          <a class="nav-item nav-link" href="/catalog">Catalog</a>
-          <a id="logout" class="nav-item nav-link">Logout</a>
-          {{else}}
-          <a class="nav-item nav-link" href="/login">Login</a>
-          {{/if}}
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 align='center'><i class='fas fa-glass-drink'></i>Mix It Up</h1>
+      <nav class='navbar navbar-expand-sm navbar-light'>
+        <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
+          <div class='navbar-nav m-auto'>
+            <a class='nav-item nav-link' href='/'>Home</a>
+            {{#if loggedIn}}
+              <a class='nav-item nav-link' href='/catalog'>Catalog</a>
+              <a id='logout' class='nav-item nav-link'>Logout</a>
+            {{else}}
+              <a class='nav-item nav-link' href='/login'>Login</a>
+            {{/if}}
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- Hero -->
-  <div class="hero">
-    <img src="/assets/images/navbar.jpeg" class="img-fluid max-width: 100vw height: 50vh" alt="">
-  </div>
+    <!-- Hero -->
+    <div class='hero'>
+      <img
+        src='/assets/images/navbar.jpeg'
+        class='img-fluid max-width: 100vw height: 50vh'
+        alt=''
+      />
+    </div>
 
-  <!-- Main -->
-  <main class="p-3">
-    {{{ body }}}
-  </main>
+    <!-- Main -->
+    <main class='p-3'>
+      {{{body}}}
+    </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+    {{! To Run Bootstrap }}
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+    ></script>
+    <script
+      src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+    ></script>
+    {{! JQuery script}}
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+    ></script>
+    {{! To run Raty.js -- JQuery add-on }}
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/raty/3.1.1/jquery.raty.min.js'
+    ></script>
+    {{#if loggedIn}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+  </body>
 
 </html>
