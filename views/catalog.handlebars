@@ -19,7 +19,7 @@
                         <div class="modal-body">
                             <form class="fav-drink">
                                 <div>
-                                    <label for="drink">Pick your favorite here:</label>
+                                    <label for="drink">Pick your favorite:</label>
                                     <input list="drinks" name="drink" id="drink">
                                     <datalist id="drinks">
                                         <option value="Amaretto Shake">
@@ -88,16 +88,6 @@
                                         <option value="Margarita">
                                     </datalist>
                                 </div>
-                                <div>
-                                    <label for="instruction">Any changes in the recipe that you want to add
-                                        here?</label>
-                                    <input type="text" id="instruction" />
-                                </div>
-                                <div>
-                                    <label for="ingredient">Please enter any additional ingredients that you are
-                                        using</label>
-                                    <input type="text" id="ingredient" />
-                                </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -108,16 +98,6 @@
                 </div>
             </div>
         </div>
-        <!-- List -->
-        <ol class="container animate__animated animate__fadeInUp">
-            {{#if drinks.length}}
-            {{#each drinks as |favorite|}}
-            {{>catalog-cards favorite}}
-            {{/each}}
-        </ol>
-        {{else}}
-        <h6 class="text-center text-dark font-regular m-3">Currently you don't have any favorite drinks!</h6>
-        {{/if}}
     </div>
 </main>
 
