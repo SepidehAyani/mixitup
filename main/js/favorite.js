@@ -3,10 +3,26 @@ async function favHandler(event) {
 
   const name = document.querySelector('#drink').value.trim();
 
-  const getFavDrinks = localStorage.getItem("Favorite Drinks");
+  console.log(name);
 
-  localStorage.setItem("Favorite Drinks", JSON.stringify(getFavDrinks))
+  let favDrinks;
 
+  const favDrinksString = localStorage.getItem('favDrinks');
+
+  console.log(favDrinksString);
+
+  if (favDrinksString) {
+    favDrinks = JSON.parse(favDrinksString);
+  }
+  else {
+    favDrinks = [];
+  }
+  if (favDrinks.indexOf(name === -1)) {
+    favDrinks.push(name);
+  }
+
+  localStorage.setItem('favDrinks', JSON.stringify(favDrinks));
+
+  console.log(favDrinks);
 }
-
-document.querySelector('.fav-drink').addEventListener('submit', favHandler);
+  document.querySelector('.fav-drink').addEventListener('submit', favHandler);

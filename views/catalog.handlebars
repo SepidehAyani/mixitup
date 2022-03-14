@@ -94,10 +94,23 @@
                             <button type="button submit" class="btn btn-primary" id="submit">Save changes</button>
                         </div>
                         </form>
+                        <div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- List -->
+    <ol class="container animate__animated animate__fadeInUp">
+        {{#if favDrinks.length}}
+        {{#each favDrinks as |drink|}}
+        {{>catalog-cards drink}}
+        {{/each}}
+    </ol>
+    {{else}}
+    <h6 class="text-center text-dark font-regular m-3">Currently you don't have any favorite drinks!</h6>
+    {{/if}}
     </div>
 </main>
 
