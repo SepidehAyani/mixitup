@@ -61,7 +61,9 @@ DB_PW='xxx'
 - <a href="https://www.npmjs.com/package/express">Express.js</a>
 - <a href="https://getbootstrap.com/">Bootstrap</a>
 - <a href="https://sequelize.org/">Sequelize</a>
-- <a href="https://fonts.google.com/">Google Fonts</a>
+- <a href="https://fonts.google.com/">Google Fonts<a>
+- <a href="https://www.npmjs.com/package/raty-js">Raty-js<a>
+
 
 ## Usage
 Mix-It-Up allows users to:
