@@ -1,3 +1,6 @@
+* {
+  text-align: center;
+}
 
 @font-face {
   font-family: 'Lobster';
@@ -85,8 +88,8 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.card-action {
-  text-align: center !important;
+.card-action a {
+  text-align: center;
   margin-right: 0px !important;
 }
 
@@ -97,12 +100,6 @@ a {
 }
 .body-content {
   flex: 5;
-}
-
-.col {
-  padding: 0px, 0px, 0px, 0px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 footer {
@@ -123,4 +120,10 @@ footer a:hover {
 footer a:visited {
   font-style: italic;
   text-decoration: none;
+}
+
+.col {
+  padding: 0px, 0px, 0px, 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
